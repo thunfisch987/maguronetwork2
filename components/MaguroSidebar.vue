@@ -1,0 +1,60 @@
+<template>
+	<VaSidebar
+		position="left"
+		v-model="sidebarEnabled"
+		style="position: absolute; z-index: 3"
+	>
+		<VaSidebarItem @click="toggleSidebar(false)">
+			<VaSidebarItemContent style="text-align: center">
+				<VaSidebarItemTitle></VaSidebarItemTitle>
+				<VaButton icon="va-arrow-left"></VaButton>
+			</VaSidebarItemContent>
+		</VaSidebarItem>
+		<template v-for="item in sidebarItems" :key="item.title">
+			<VaSidebarItem
+				v-if="!item.href"
+				:active="item.active"
+				:to="{ name: item.to }"
+			>
+				<VaSidebarItemContent>
+					<NuxtImg
+						v-if="item.title === 'RandomMemes'"
+						:src="item.image"
+						style="width: 2em; height: 2em"
+					/>
+					<NuxtImg
+						v-else-if="item.title === 'Nölz\' Weebsite'"
+						:src="weebsiteImages[weebsiteImages.current]"
+						style="width: 2em; height: 2em"
+						loading="lazy"
+					/>
+					<Icon v-else :name="item.icon" size="2em" />
+					<VaSidebarItemTitle>
+						{{ item.title }}
+					</VaSidebarItemTitle>
+				</VaSidebarItemContent>
+			</VaSidebarItem>
+			<VaSidebarItem
+				v-else
+				:active="item.active"
+				:href="item.href.toString()"
+			>
+				<VaSidebarItemContent>
+					<Icon :name="item.icon" size="2em" />
+					<VaSidebarItemTitle>
+						{{ item.title }}
+					</VaSidebarItemTitle>
+					<VaIcon v-if="item.href" name="open_in_new" />
+				</VaSidebarItemContent>
+			</VaSidebarItem>
+		</template>
+	</VaSidebar>
+</template>
+
+<script lang="ts" setup>
+const sidebarEnabled = useSidebarEnable();
+const toggleSidebar = useToggleSidebar();
+const sidebarItems = useSidebarItems();
+
+const weebsiteImages = useWeebsiteImages();
+</script>

@@ -1,0 +1,27 @@
+.logo {
+	background: linear-gradient(
+		to right,
+		#ffd700,
+		#bbff00,
+		#00ff2b,
+		#00ffb7,
+		#00ffff,
+		#00feff,
+		#00f4ff,
+		#00e2ff
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	animation: hue-rotate 3s linear infinite;
+}
+
+@keyframes hue-rotate {
+	0% {
+		filter: hue-rotate(0);
+	}
+	to {
+		filter: hue-rotate(-360deg);
+	}
+}
