@@ -84,7 +84,7 @@ const client_manifest = {
   "pages/Akela/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.949b0cfd.js",
+    "file": "index.cfa72431.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -94,7 +94,7 @@ const client_manifest = {
   "pages/EnergyDrinkWiki/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.ff33ab93.js",
+    "file": "index.30bb2994.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -104,7 +104,7 @@ const client_manifest = {
   "pages/RandomMemes/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.30bb2994.js",
+    "file": "index.0e526dd5.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -114,7 +114,7 @@ const client_manifest = {
   "pages/Vegalou/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.cfa72431.js",
+    "file": "index.949b0cfd.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -124,7 +124,7 @@ const client_manifest = {
   "pages/Weebsite/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.0e526dd5.js",
+    "file": "index.ff33ab93.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
