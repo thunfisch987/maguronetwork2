@@ -1,12 +1,4 @@
 const client_manifest = {
-  "_composables.144939dd.js": {
-    "resourceType": "script",
-    "module": true,
-    "file": "composables.144939dd.js",
-    "imports": [
-      "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
-    ]
-  },
   "node_modules/.pnpm/@nuxt+ui-templates@1.1.1/node_modules/@nuxt/ui-templates/dist/templates/error-404.css": {
     "resourceType": "style",
     "file": "error-404.11ac45d8.css",
@@ -16,10 +8,9 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-404.75732a7b.js",
+    "file": "error-404.23f9a5d9.js",
     "imports": [
-      "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs",
-      "_composables.144939dd.js"
+      "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
     "isDynamicEntry": true,
     "src": "node_modules/.pnpm/@nuxt+ui-templates@1.1.1/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"
@@ -37,10 +28,9 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-500.57b532f0.js",
+    "file": "error-500.afbb7de2.js",
     "imports": [
-      "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs",
-      "_composables.144939dd.js"
+      "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
     "isDynamicEntry": true,
     "src": "node_modules/.pnpm/@nuxt+ui-templates@1.1.1/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
@@ -49,32 +39,52 @@ const client_manifest = {
     "file": "error-500.1efb1c85.css",
     "resourceType": "style"
   },
+  "node_modules/.pnpm/nuxt-icon@0.3.2_vue@3.2.47/node_modules/nuxt-icon/dist/runtime/IconCSS.css": {
+    "resourceType": "style",
+    "file": "IconCSS.aa5f9d3f.css",
+    "src": "node_modules/.pnpm/nuxt-icon@0.3.2_vue@3.2.47/node_modules/nuxt-icon/dist/runtime/IconCSS.css"
+  },
+  "node_modules/.pnpm/nuxt-icon@0.3.2_vue@3.2.47/node_modules/nuxt-icon/dist/runtime/IconCSS.vue": {
+    "resourceType": "script",
+    "module": true,
+    "css": [],
+    "file": "IconCSS.eeceb444.js",
+    "imports": [
+      "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/.pnpm/nuxt-icon@0.3.2_vue@3.2.47/node_modules/nuxt-icon/dist/runtime/IconCSS.vue"
+  },
+  "IconCSS.aa5f9d3f.css": {
+    "file": "IconCSS.aa5f9d3f.css",
+    "resourceType": "style"
+  },
   "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",
-    "file": "entry.72297325.css",
+    "file": "entry.539853b4.css",
     "src": "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.css"
   },
   "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "entry.72297325.css"
+      "entry.539853b4.css"
     ],
     "dynamicImports": [
       "virtual:nuxt:/home/runner/work/maguronetwork2/maguronetwork2/.nuxt/error-component.mjs"
     ],
-    "file": "entry.8c7e94f8.js",
+    "file": "entry.15d8ee6e.js",
     "isEntry": true,
     "src": "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
   },
-  "entry.72297325.css": {
-    "file": "entry.72297325.css",
+  "entry.539853b4.css": {
+    "file": "entry.539853b4.css",
     "resourceType": "style"
   },
   "pages/Akela/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.bf57655a.js",
+    "file": "index.949b0cfd.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -84,7 +94,7 @@ const client_manifest = {
   "pages/EnergyDrinkWiki/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.973fa9dc.js",
+    "file": "index.ff33ab93.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -94,7 +104,7 @@ const client_manifest = {
   "pages/RandomMemes/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.e8d1f1d3.js",
+    "file": "index.30bb2994.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -104,7 +114,7 @@ const client_manifest = {
   "pages/Vegalou/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.dfd46ae9.js",
+    "file": "index.cfa72431.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -114,7 +124,7 @@ const client_manifest = {
   "pages/Weebsite/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.0f61fd4c.js",
+    "file": "index.0e526dd5.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -124,7 +134,7 @@ const client_manifest = {
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.5340a79f.js",
+    "file": "index.50783b7b.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -138,7 +148,7 @@ const client_manifest = {
       "node_modules/.pnpm/@nuxt+ui-templates@1.1.1/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/.pnpm/@nuxt+ui-templates@1.1.1/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "error-component.6ddc0a2a.js",
+    "file": "error-component.00b0172a.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
