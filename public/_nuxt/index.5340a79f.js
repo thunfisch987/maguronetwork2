@@ -1,0 +1,1 @@
+import{b as s,e as o,f as e,F as a,r as u,u as l,o as t,t as c}from"./entry.8c7e94f8.js";const i={style:{color:"white"}},d=s({__name:"index",setup(_){const n=o().getRoutes();return(m,p)=>(t(),e("ul",i,[(t(!0),e(a,null,u(l(n),r=>(t(),e("li",null,c(r.name),1))),256))]))}});export{d as default};
