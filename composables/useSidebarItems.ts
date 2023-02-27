@@ -9,7 +9,7 @@ export type BaseSidebarItem = {
 	readonly images?: boolean;
 };
 
-type SidebarItems = {
+export type SidebarItems = {
 	[key: string]: BaseSidebarItem;
 };
 

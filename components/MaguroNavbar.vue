@@ -9,7 +9,9 @@
 			</VaNavbarItem>
 		</template>
 		<template v-if="!currentDevice.isMobile" #default>
-			<VaNavbarItem class="logo"> MAGURONETWORK </VaNavbarItem>
+			<VaNavbarItem class="logo">
+				{{ currentSidebarItem.toUpperCase() }}
+			</VaNavbarItem>
 		</template>
 	</VaNavbar>
 </template>
