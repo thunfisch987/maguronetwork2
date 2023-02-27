@@ -14,14 +14,14 @@ export class tabArray<T> extends Array<T> {
 	}
 }
 
-let items = new tabArray<string>(
+const items = new tabArray<string>(
 	"/evangelion/asuka_smug.png",
 	"/evangelion/cupoftea.PNG",
 	"/evangelion/misato_smug.png",
 	"/evangelion/misato_toast.PNG"
 );
 
-let weebsiteImages = reactive<tabArray<string>>(items);
+const weebsiteImages = reactive<tabArray<string>>(items);
 
 export default function (): tabArray<string> {
 	return weebsiteImages;
