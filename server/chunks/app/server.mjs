@@ -1,4 +1,4 @@
-import { version, reactive, computed, shallowReactive, useSSRContext, getCurrentInstance, shallowRef, isReadonly, defineComponent, toRefs, useCssVars, watchEffect, ref, createSlots, withCtx, unref, createVNode, createTextVNode, openBlock, createBlock, createCommentVNode, watch, withAsyncContext, mergeProps, resolveDynamicComponent, isRef, toDisplayString, Fragment as Fragment$1, renderList, createApp, defineAsyncComponent, toRef, nextTick, shallowReadonly, h, Suspense, Transition, provide, onErrorCaptured, onServerPrefetch, inject as inject$1, renderSlot, createElementBlock, resolveComponent, withDirectives, createElementVNode, normalizeClass, normalizeStyle, vShow, withModifiers, withKeys, normalizeProps, guardReactiveProps, Teleport, toHandlers, render } from 'vue';
+import { version, reactive, computed, shallowReactive, useSSRContext, getCurrentInstance, shallowRef, isReadonly, defineComponent, toRefs, useCssVars, watchEffect, ref, createSlots, withCtx, unref, createVNode, createTextVNode, toDisplayString, openBlock, createBlock, createCommentVNode, watch, withAsyncContext, mergeProps, resolveDynamicComponent, isRef, Fragment as Fragment$1, renderList, createApp, defineAsyncComponent, toRef, nextTick, shallowReadonly, h, Suspense, Transition, provide, onErrorCaptured, onServerPrefetch, inject as inject$1, renderSlot, createElementBlock, resolveComponent, withDirectives, createElementVNode, normalizeClass, normalizeStyle, vShow, withModifiers, withKeys, normalizeProps, guardReactiveProps, Teleport, toHandlers, render } from 'vue';
 import { $fetch } from 'ofetch';
 import { createHooks } from 'hookable';
 import { getContext, executeAsync } from 'unctx';
@@ -10,7 +10,7 @@ import { createError as createError$1, sendRedirect } from 'h3';
 import { hasProtocol, parseURL, joinURL, isEqual, encodeParam, withLeadingSlash, encodePath } from 'ufo';
 import { defu } from 'defu';
 import { ColorTranslator } from 'colortranslator';
-import { ssrRenderComponent, ssrRenderAttrs, ssrRenderVNode, ssrInterpolate, ssrRenderList, ssrRenderClass, ssrRenderSuspense } from 'vue/server-renderer';
+import { ssrRenderComponent, ssrInterpolate, ssrRenderAttrs, ssrRenderVNode, ssrRenderList, ssrRenderClass, ssrRenderSuspense } from 'vue/server-renderer';
 import { Icon as Icon$1 } from '@iconify/vue/dist/offline';
 import { loadIcon } from '@iconify/vue';
 import { a as useRuntimeConfig$1 } from '../nitro/node-server.mjs';
@@ -445,7 +445,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-0285b685.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-5d3c187a.mjs').then((m) => m.default || m)
   }
 ];
 const routerOptions0 = {
@@ -575,58 +575,55 @@ function useAppConfig() {
   }
   return nuxtApp._appConfig;
 }
+const MaguroNetwork = {
+  icon: "",
+  active: false,
+  to: "index"
+};
+const Akela = {
+  icon: "twemoji:dog-face",
+  active: false,
+  to: "Akela"
+};
+const EnergyDrinkWiki = {
+  icon: "pepicons:can",
+  active: false,
+  to: "EnergyDrinkWiki"
+};
+const RandomMemes = {
+  image: "/fuckboi.png",
+  active: false,
+  to: "RandomMemes"
+};
+const Vegalou = {
+  icon: "twemoji:llama",
+  active: false,
+  to: "Vegalou"
+};
+const Razer4Ever = {
+  icon: "simple-icons:razer",
+  href: "https://oldr4e.littlebitgay.de"
+};
+const Rocketgame = {
+  icon: "twemoji:rocket",
+  href: "https://rg.littlebitgay.de"
+};
+const sidebarJson = {
+  MaguroNetwork,
+  Akela,
+  EnergyDrinkWiki,
+  RandomMemes,
+  Vegalou,
+  "Nölz' Weebsite": {
+    images: true,
+    active: false,
+    to: "Weebsite"
+  },
+  Razer4Ever,
+  Rocketgame
+};
 function useSidebarItems() {
-  const items2 = [
-    {
-      title: "Main",
-      icon: "",
-      active: false,
-      to: "index"
-    },
-    {
-      title: "Akela",
-      icon: "twemoji:dog-face",
-      active: false,
-      to: "Akela"
-    },
-    {
-      title: "EnergyDrinkWiki",
-      icon: "pepicons:can",
-      active: false,
-      to: "EnergyDrinkWiki"
-    },
-    {
-      title: "RandomMemes",
-      icon: "",
-      image: "/fuckboi.png",
-      active: false,
-      to: "RandomMemes"
-    },
-    {
-      title: "Vegalou",
-      icon: "twemoji:llama",
-      active: false,
-      to: "Vegalou"
-    },
-    {
-      title: "Nölz' Weebsite",
-      icon: "",
-      images: true,
-      active: false,
-      to: "Weebsite"
-    },
-    {
-      title: "Razer4Ever",
-      icon: "simple-icons:razer",
-      href: new URL("https://oldr4e.littlebitgay.de")
-    },
-    {
-      title: "Rocketgame",
-      icon: "twemoji:rocket",
-      href: new URL("https://rg.littlebitgay.de")
-    }
-  ];
-  return useState("sidebarItems", () => items2);
+  return useState("sidebarItems", () => sidebarJson);
 }
 function useSidebarEnable() {
   return useState("sidebarEnabled", () => false);
@@ -645,13 +642,13 @@ class tabArray extends Array {
     return this[this.current++];
   }
 }
-let items = new tabArray(
+const items = new tabArray(
   "/evangelion/asuka_smug.png",
   "/evangelion/cupoftea.PNG",
   "/evangelion/misato_smug.png",
   "/evangelion/misato_toast.PNG"
 );
-let weebsiteImages = reactive(items);
+const weebsiteImages = reactive(items);
 function useWeebsiteImages() {
   return weebsiteImages;
 }
@@ -671,16 +668,23 @@ function useToggleSidebar() {
     }
   };
 }
+function useCurrentSidebarItem() {
+  return useState("currentSidebarItem", () => "MaguroNetwork");
+}
 const set_45active_45site_45global = defineNuxtRouteMiddleware((to) => {
   const sidebarItems = useSidebarItems();
   const toggleSidebar = useToggleSidebar();
-  sidebarItems.value.forEach(function(item) {
-    if (item.to === to.name) {
-      item.active = true;
-    } else {
-      item.active = false;
+  const currentSidebarItem = useCurrentSidebarItem();
+  for (const [itemname, item] of Object.entries(sidebarItems.value)) {
+    if (item.to) {
+      if (item.to === to.name) {
+        item.active = true;
+        currentSidebarItem.value = itemname;
+      } else {
+        item.active = false;
+      }
     }
-  });
+  }
   toggleSidebar(false);
 });
 const globalMiddleware = [
@@ -1059,7 +1063,7 @@ const getImage = (src, { modifiers = {}, baseURL: baseURL2 } = {}, _ctx) => {
 };
 const validateDomains = true;
 const supportsAlias = true;
-const ipxRuntime$erHuEk0jkT = /* @__PURE__ */ Object.freeze({
+const ipxRuntime$Y1z1Dlqgoy = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   getImage,
   supportsAlias,
@@ -1081,9 +1085,9 @@ const imageOptions = {
   "alias": {}
 };
 imageOptions.providers = {
-  ["ipx"]: { provider: ipxRuntime$erHuEk0jkT, defaults: {} }
+  ["ipx"]: { provider: ipxRuntime$Y1z1Dlqgoy, defaults: {} }
 };
-const plugin_HGErjvrcNw = defineNuxtPlugin(() => {
+const plugin_a5X8iEkX19 = defineNuxtPlugin(() => {
   const img = createImage(imageOptions);
   return {
     provide: {
@@ -6403,7 +6407,7 @@ const _plugins = [
   components_plugin_KR1HBZs4kY,
   vueuse_head_plugin_hJ5ut56rKX,
   router_JCP0YfzX4Y,
-  plugin_HGErjvrcNw,
+  plugin_a5X8iEkX19,
   plugin_SjrWhxHRlu,
   plugin_FRmGFsEaPh
 ];
@@ -6416,6 +6420,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     var toggleSidebar = useToggleSidebar();
     var currentDevice = useDevice();
+    var currentSidebarItem = useCurrentSidebarItem();
     return (_ctx, _push, _parent2, _attrs) => {
       const _component_VaNavbar = VaNavbar;
       const _component_VaNavbarItem = VaNavbarItem;
@@ -6445,10 +6450,10 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
               _push2(ssrRenderComponent(_component_VaNavbarItem, { class: "logo" }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(` MAGURONETWORK `);
+                    _push3(`${ssrInterpolate(unref(currentSidebarItem).toUpperCase())}`);
                   } else {
                     return [
-                      createTextVNode(" MAGURONETWORK ")
+                      createTextVNode(toDisplayString(unref(currentSidebarItem).toUpperCase()), 1)
                     ];
                   }
                 }),
@@ -6473,7 +6478,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
                 class: "logo"
               }, {
                 default: withCtx(() => [
-                  createTextVNode(" MAGURONETWORK ")
+                  createTextVNode(toDisplayString(unref(currentSidebarItem).toUpperCase()), 1)
                 ]),
                 _: 1
               })) : createCommentVNode("", true)
@@ -6489,10 +6494,10 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
               _push2(ssrRenderComponent(_component_VaNavbarItem, { class: "logo" }, {
                 default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                   if (_push3) {
-                    _push3(` MAGURONETWORK `);
+                    _push3(`${ssrInterpolate(unref(currentSidebarItem).toUpperCase())}`);
                   } else {
                     return [
-                      createTextVNode(" MAGURONETWORK ")
+                      createTextVNode(toDisplayString(unref(currentSidebarItem).toUpperCase()), 1)
                     ];
                   }
                 }),
@@ -6502,7 +6507,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
               return [
                 createVNode(_component_VaNavbarItem, { class: "logo" }, {
                   default: withCtx(() => [
-                    createTextVNode(" MAGURONETWORK ")
+                    createTextVNode(toDisplayString(unref(currentSidebarItem).toUpperCase()), 1)
                   ]),
                   _: 1
                 })
@@ -6528,7 +6533,7 @@ _sfc_main$4.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/MaguroNavbar.vue");
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-df6d0a49"]]);
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-5ec407a6"]]);
 const __nuxt_component_1 = /* @__PURE__ */ defineComponent({
   name: "NuxtLoadingIndicator",
   props: {
@@ -6921,7 +6926,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
               _: 1
             }, _parent22, _scopeId));
             _push2(`<!--[-->`);
-            ssrRenderList(unref(sidebarItems), (item) => {
+            ssrRenderList(Object.entries(unref(sidebarItems)), ([itemname, item]) => {
               _push2(`<!--[-->`);
               if (!item.href) {
                 _push2(ssrRenderComponent(_component_VaSidebarItem, {
@@ -6933,12 +6938,12 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                       _push3(ssrRenderComponent(_component_VaSidebarItemContent, null, {
                         default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                           if (_push4) {
-                            if (item.title === "RandomMemes") {
+                            if (itemname === "RandomMemes") {
                               _push4(ssrRenderComponent(_component_NuxtImg, {
                                 src: item.image,
                                 style: { "width": "2em", "height": "2em" }
                               }, null, _parent4, _scopeId3));
-                            } else if (item.title === "Nölz' Weebsite") {
+                            } else if (itemname === "Nölz' Weebsite") {
                               _push4(ssrRenderComponent(_component_NuxtImg, {
                                 src: unref(weebsiteImages2)[unref(weebsiteImages2).current],
                                 style: { "width": "2em", "height": "2em" },
@@ -6953,10 +6958,10 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                             _push4(ssrRenderComponent(_component_VaSidebarItemTitle, null, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
-                                  _push5(`${ssrInterpolate(item.title)}`);
+                                  _push5(`${ssrInterpolate(itemname)}`);
                                 } else {
                                   return [
-                                    createTextVNode(toDisplayString(item.title), 1)
+                                    createTextVNode(toDisplayString(itemname), 1)
                                   ];
                                 }
                               }),
@@ -6964,11 +6969,11 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                             }, _parent4, _scopeId3));
                           } else {
                             return [
-                              item.title === "RandomMemes" ? (openBlock(), createBlock(_component_NuxtImg, {
+                              itemname === "RandomMemes" ? (openBlock(), createBlock(_component_NuxtImg, {
                                 key: 0,
                                 src: item.image,
                                 style: { "width": "2em", "height": "2em" }
-                              }, null, 8, ["src"])) : item.title === "Nölz' Weebsite" ? (openBlock(), createBlock(_component_NuxtImg, {
+                              }, null, 8, ["src"])) : itemname === "Nölz' Weebsite" ? (openBlock(), createBlock(_component_NuxtImg, {
                                 key: 1,
                                 src: unref(weebsiteImages2)[unref(weebsiteImages2).current],
                                 style: { "width": "2em", "height": "2em" },
@@ -6980,7 +6985,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                               }, null, 8, ["name"])),
                               createVNode(_component_VaSidebarItemTitle, null, {
                                 default: withCtx(() => [
-                                  createTextVNode(toDisplayString(item.title), 1)
+                                  createTextVNode(toDisplayString(itemname), 1)
                                 ]),
                                 _: 2
                               }, 1024)
@@ -6993,11 +6998,11 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                       return [
                         createVNode(_component_VaSidebarItemContent, null, {
                           default: withCtx(() => [
-                            item.title === "RandomMemes" ? (openBlock(), createBlock(_component_NuxtImg, {
+                            itemname === "RandomMemes" ? (openBlock(), createBlock(_component_NuxtImg, {
                               key: 0,
                               src: item.image,
                               style: { "width": "2em", "height": "2em" }
-                            }, null, 8, ["src"])) : item.title === "Nölz' Weebsite" ? (openBlock(), createBlock(_component_NuxtImg, {
+                            }, null, 8, ["src"])) : itemname === "Nölz' Weebsite" ? (openBlock(), createBlock(_component_NuxtImg, {
                               key: 1,
                               src: unref(weebsiteImages2)[unref(weebsiteImages2).current],
                               style: { "width": "2em", "height": "2em" },
@@ -7009,7 +7014,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                             }, null, 8, ["name"])),
                             createVNode(_component_VaSidebarItemTitle, null, {
                               default: withCtx(() => [
-                                createTextVNode(toDisplayString(item.title), 1)
+                                createTextVNode(toDisplayString(itemname), 1)
                               ]),
                               _: 2
                             }, 1024)
@@ -7038,10 +7043,10 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                             _push4(ssrRenderComponent(_component_VaSidebarItemTitle, null, {
                               default: withCtx((_4, _push5, _parent5, _scopeId4) => {
                                 if (_push5) {
-                                  _push5(`${ssrInterpolate(item.title)}`);
+                                  _push5(`${ssrInterpolate(itemname)}`);
                                 } else {
                                   return [
-                                    createTextVNode(toDisplayString(item.title), 1)
+                                    createTextVNode(toDisplayString(itemname), 1)
                                   ];
                                 }
                               }),
@@ -7060,7 +7065,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                               }, null, 8, ["name"]),
                               createVNode(_component_VaSidebarItemTitle, null, {
                                 default: withCtx(() => [
-                                  createTextVNode(toDisplayString(item.title), 1)
+                                  createTextVNode(toDisplayString(itemname), 1)
                                 ]),
                                 _: 2
                               }, 1024),
@@ -7083,7 +7088,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                             }, null, 8, ["name"]),
                             createVNode(_component_VaSidebarItemTitle, null, {
                               default: withCtx(() => [
-                                createTextVNode(toDisplayString(item.title), 1)
+                                createTextVNode(toDisplayString(itemname), 1)
                               ]),
                               _: 2
                             }, 1024),
@@ -7119,10 +7124,8 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                 ]),
                 _: 1
               }, 8, ["onClick"]),
-              (openBlock(true), createBlock(Fragment$1, null, renderList(unref(sidebarItems), (item) => {
-                return openBlock(), createBlock(Fragment$1, {
-                  key: item.title
-                }, [
+              (openBlock(true), createBlock(Fragment$1, null, renderList(Object.entries(unref(sidebarItems)), ([itemname, item]) => {
+                return openBlock(), createBlock(Fragment$1, { key: itemname }, [
                   !item.href ? (openBlock(), createBlock(_component_VaSidebarItem, {
                     key: 0,
                     active: item.active,
@@ -7131,11 +7134,11 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                     default: withCtx(() => [
                       createVNode(_component_VaSidebarItemContent, null, {
                         default: withCtx(() => [
-                          item.title === "RandomMemes" ? (openBlock(), createBlock(_component_NuxtImg, {
+                          itemname === "RandomMemes" ? (openBlock(), createBlock(_component_NuxtImg, {
                             key: 0,
                             src: item.image,
                             style: { "width": "2em", "height": "2em" }
-                          }, null, 8, ["src"])) : item.title === "Nölz' Weebsite" ? (openBlock(), createBlock(_component_NuxtImg, {
+                          }, null, 8, ["src"])) : itemname === "Nölz' Weebsite" ? (openBlock(), createBlock(_component_NuxtImg, {
                             key: 1,
                             src: unref(weebsiteImages2)[unref(weebsiteImages2).current],
                             style: { "width": "2em", "height": "2em" },
@@ -7147,7 +7150,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                           }, null, 8, ["name"])),
                           createVNode(_component_VaSidebarItemTitle, null, {
                             default: withCtx(() => [
-                              createTextVNode(toDisplayString(item.title), 1)
+                              createTextVNode(toDisplayString(itemname), 1)
                             ]),
                             _: 2
                           }, 1024)
@@ -7170,7 +7173,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
                           }, null, 8, ["name"]),
                           createVNode(_component_VaSidebarItemTitle, null, {
                             default: withCtx(() => [
-                              createTextVNode(toDisplayString(item.title), 1)
+                              createTextVNode(toDisplayString(itemname), 1)
                             ]),
                             _: 2
                           }, 1024),

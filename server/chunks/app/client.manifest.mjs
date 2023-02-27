@@ -8,7 +8,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-404.23f9a5d9.js",
+    "file": "error-404.bbd657e6.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -28,7 +28,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-500.afbb7de2.js",
+    "file": "error-500.37618324.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -48,7 +48,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "IconCSS.eeceb444.js",
+    "file": "IconCSS.05975b4a.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -61,30 +61,30 @@ const client_manifest = {
   },
   "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",
-    "file": "entry.539853b4.css",
+    "file": "entry.c7b35986.css",
     "src": "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.css"
   },
   "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "entry.539853b4.css"
+      "entry.c7b35986.css"
     ],
     "dynamicImports": [
       "virtual:nuxt:/home/runner/work/maguronetwork2/maguronetwork2/.nuxt/error-component.mjs"
     ],
-    "file": "entry.15d8ee6e.js",
+    "file": "entry.b8012170.js",
     "isEntry": true,
     "src": "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
   },
-  "entry.539853b4.css": {
-    "file": "entry.539853b4.css",
+  "entry.c7b35986.css": {
+    "file": "entry.c7b35986.css",
     "resourceType": "style"
   },
   "pages/Akela/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.cfa72431.js",
+    "file": "index.82522423.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -94,7 +94,7 @@ const client_manifest = {
   "pages/EnergyDrinkWiki/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.30bb2994.js",
+    "file": "index.1fbc2348.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -104,7 +104,7 @@ const client_manifest = {
   "pages/RandomMemes/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.0e526dd5.js",
+    "file": "index.169387c6.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -114,7 +114,7 @@ const client_manifest = {
   "pages/Vegalou/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.949b0cfd.js",
+    "file": "index.9fcc4a94.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -124,7 +124,7 @@ const client_manifest = {
   "pages/Weebsite/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.ff33ab93.js",
+    "file": "index.7af17d72.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -134,7 +134,7 @@ const client_manifest = {
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.50783b7b.js",
+    "file": "index.b0e5c282.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],
@@ -148,7 +148,7 @@ const client_manifest = {
       "node_modules/.pnpm/@nuxt+ui-templates@1.1.1/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/.pnpm/@nuxt+ui-templates@1.1.1/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "error-component.00b0172a.js",
+    "file": "error-component.35f496c8.js",
     "imports": [
       "node_modules/.pnpm/nuxt@3.2.2_sass@1.58.3/node_modules/nuxt/dist/app/entry.mjs"
     ],

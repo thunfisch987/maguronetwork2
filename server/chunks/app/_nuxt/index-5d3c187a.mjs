@@ -1,6 +1,5 @@
-import { a as useRouter } from '../server.mjs';
-import { defineComponent, mergeProps, unref, useSSRContext } from 'vue';
-import { ssrRenderAttrs, ssrRenderList, ssrInterpolate } from 'vue/server-renderer';
+import { useSSRContext } from 'vue';
+import { _ as _export_sfc } from '../server.mjs';
 import 'ofetch';
 import 'hookable';
 import 'unctx';
@@ -12,6 +11,7 @@ import 'h3';
 import 'ufo';
 import 'defu';
 import 'colortranslator';
+import 'vue/server-renderer';
 import '@iconify/vue/dist/offline';
 import '@iconify/vue';
 import '../../nitro/node-server.mjs';
@@ -29,26 +29,16 @@ import 'node:url';
 import 'pathe';
 import 'ipx';
 
-const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "index",
-  __ssrInlineRender: true,
-  setup(__props) {
-    const currentRoutes = useRouter().getRoutes();
-    return (_ctx, _push, _parent, _attrs) => {
-      _push(`<ul${ssrRenderAttrs(mergeProps({ style: { "color": "white" } }, _attrs))}><!--[-->`);
-      ssrRenderList(unref(currentRoutes), (currentRoute) => {
-        _push(`<li>${ssrInterpolate(currentRoute.name)}</li>`);
-      });
-      _push(`<!--]--></ul>`);
-    };
-  }
-});
+const _sfc_main = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+}
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
-export { _sfc_main as default };
-//# sourceMappingURL=index-0285b685.mjs.map
+export { index as default };
+//# sourceMappingURL=index-5d3c187a.mjs.map
