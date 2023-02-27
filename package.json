@@ -8,8 +8,8 @@
 		"postinstall": "nuxt prepare"
 	},
 	"devDependencies": {
-		"@nuxt/devtools": "^0.1.4",
-		"@nuxt/image-edge": "1.0.0-27919678.2f5b64b",
+		"@nuxt/devtools": "^0.2.3",
+		"@nuxt/image-edge": "1.0.0-27954023.4cee565",
 		"@nuxtjs/device": "^3.1.0",
 		"nuxt": "^3.2.2",
 		"nuxt-icon": "^0.3.2"
@@ -17,10 +17,10 @@
 	"dependencies": {
 		"@vuestic/nuxt": "^1.0.11",
 		"node-fetch-native": "^1.0.2",
-		"nuxt-typed-router": "^2.3.5",
+		"nuxt-typed-router": "^3.0.1",
 		"sass": "^1.58.3",
 		"sass-loader": "^13.2.0",
 		"utility-types": "^3.10.0",
-		"vuestic-ui": "1.6.1"
+		"vuestic-ui": "^1.6.1"
 	}
 }
