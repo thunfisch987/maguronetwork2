@@ -1,11 +1,3 @@
-<template>
-	<ul style="color: white">
-		<li v-for="currentRoute in currentRoutes">
-			{{ currentRoute.name }}
-		</li>
-	</ul>
-</template>
+<template></template>
 
-<script lang="ts" setup>
-const currentRoutes = useRouter().getRoutes();
-</script>
+<script lang="ts" setup></script>
