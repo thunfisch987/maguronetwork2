@@ -1,0 +1,40 @@
+{
+	"MaguroNetwork": {
+		"icon": "",
+		"active": false,
+		"to": "index"
+	},
+	"Akela": {
+		"icon": "twemoji:dog-face",
+		"active": false,
+		"to": "Akela"
+	},
+	"EnergyDrinkWiki": {
+		"icon": "pepicons:can",
+		"active": false,
+		"to": "EnergyDrinkWiki"
+	},
+	"RandomMemes": {
+		"image": "/fuckboi.png",
+		"active": false,
+		"to": "RandomMemes"
+	},
+	"Vegalou": {
+		"icon": "twemoji:llama",
+		"active": false,
+		"to": "Vegalou"
+	},
+	"Nölz' Weebsite": {
+		"images": true,
+		"active": false,
+		"to": "Weebsite"
+	},
+	"Razer4Ever": {
+		"icon": "simple-icons:razer",
+		"href": "https://oldr4e.littlebitgay.de"
+	},
+	"Rocketgame": {
+		"icon": "twemoji:rocket",
+		"href": "https://rg.littlebitgay.de"
+	}
+}

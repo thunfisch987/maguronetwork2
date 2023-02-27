@@ -1,0 +1,67 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"title": "Sidebar Items",
+	"description": "Schema for the Sidebar Items of https://new.littlebitgay.de",
+	"type": "object",
+	"properties": {
+		"patternProperties": {
+			"^.*$": {
+				"active": {
+					"description": "",
+					"type": "boolean"
+				},
+				"icon": {
+					"description": "",
+					"type": "string"
+				},
+				"image": {
+					"description": "",
+					"type": "string"
+				},
+				"images": {
+					"description": "",
+					"type": "boolean"
+				},
+				"to": {
+					"description": "",
+					"type": "string"
+				},
+				"href": {
+					"description": "",
+					"type": "string"
+				}
+			},
+			"additionalProperties": false,
+			"allOf": [
+				{
+					"oneOf": [
+						{
+							"required": ["icon"],
+							"not": { "required": ["image", "images"] }
+						},
+						{
+							"required": ["image"],
+							"not": { "required": ["icon", "images"] }
+						},
+						{
+							"required": ["images"],
+							"not": { "required": ["icon", "image"] }
+						}
+					]
+				},
+				{
+					"oneOf": [
+						{
+							"required": ["to", "active"],
+							"not": { "required": ["href"] }
+						},
+						{
+							"required": ["href"],
+							"not": { "required": ["active", "to"] }
+						}
+					]
+				}
+			]
+		}
+	}
+}

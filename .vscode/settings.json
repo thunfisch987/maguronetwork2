@@ -4,5 +4,11 @@
 		"**/bower_components": true,
 		"**/*.code-search": true,
 		"**/.nuxt": true
-	}
+	},
+	"json.schemas": [
+		{
+			"fileMatch": ["sidebarItems.json"],
+			"url": "/sidebar-items-schema.json"
+		}
+	]
 }

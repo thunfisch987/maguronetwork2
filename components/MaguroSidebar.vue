@@ -10,7 +10,10 @@
 				<VaButton icon="va-arrow-left"></VaButton>
 			</VaSidebarItemContent>
 		</VaSidebarItem>
-		<template v-for="item in sidebarItems" :key="item.title">
+		<template
+			v-for="[itemname, item] of Object.entries(sidebarItems)"
+			:key="itemname"
+		>
 			<VaSidebarItem
 				v-if="!item.href"
 				:active="item.active"
@@ -18,19 +21,19 @@
 			>
 				<VaSidebarItemContent>
 					<NuxtImg
-						v-if="item.title === 'RandomMemes'"
+						v-if="itemname === 'RandomMemes'"
 						:src="item.image"
 						style="width: 2em; height: 2em"
 					/>
 					<NuxtImg
-						v-else-if="item.title === 'Nölz\' Weebsite'"
+						v-else-if="itemname === 'Nölz\' Weebsite'"
 						:src="weebsiteImages[weebsiteImages.current]"
 						style="width: 2em; height: 2em"
 						loading="lazy"
 					/>
-					<Icon v-else :name="item.icon" size="2em" />
+					<Icon v-else :name="item.icon!" size="2em" />
 					<VaSidebarItemTitle>
-						{{ item.title }}
+						{{ itemname }}
 					</VaSidebarItemTitle>
 				</VaSidebarItemContent>
 			</VaSidebarItem>
@@ -40,9 +43,9 @@
 				:href="item.href.toString()"
 			>
 				<VaSidebarItemContent>
-					<Icon :name="item.icon" size="2em" />
+					<Icon :name="item.icon!" size="2em" />
 					<VaSidebarItemTitle>
-						{{ item.title }}
+						{{ itemname }}
 					</VaSidebarItemTitle>
 					<VaIcon v-if="item.href" name="open_in_new" />
 				</VaSidebarItemContent>

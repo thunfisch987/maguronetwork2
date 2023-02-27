@@ -5,7 +5,7 @@
 				<VaButton icon="va-arrow-right" @click="toggleSidebar(true)" />
 			</VaNavbarItem>
 			<VaNavbarItem v-if="currentDevice.isMobile" class="logo">
-				MAGURONETWORK
+				{{ currentSidebarItem.toUpperCase() }}
 			</VaNavbarItem>
 		</template>
 		<template v-if="!currentDevice.isMobile" #default>
@@ -17,6 +17,7 @@
 <script lang="ts" setup>
 var toggleSidebar = useToggleSidebar();
 var currentDevice = useDevice();
+var currentSidebarItem = useCurrentSidebarItem();
 </script>
 
 <style scoped>
