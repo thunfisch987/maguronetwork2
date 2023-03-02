@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 				lang: "en",
 				style: "min-height: 100vh; min-width: 100vw",
 			},
-			title: "MaguroNetwork",
+			title: "MaguroNetwork2",
 		},
 	},
 	typescript: {

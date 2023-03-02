@@ -7,6 +7,7 @@ export type BaseSidebarItem = {
 	readonly to?: string;
 	readonly image?: string;
 	readonly images?: boolean;
+	readonly friendlyName?: string;
 };
 
 export type SidebarItems = {
