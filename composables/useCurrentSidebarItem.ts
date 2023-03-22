@@ -11,7 +11,7 @@ function setCurrentSidebarItem(to: RouteLocationNormalized) {
 		useState<CurrentSidebarItem>("currentSidebarItem");
 	const sidebarItems = useSidebarItems();
 	for (const [itemname, item] of Object.entries(sidebarItems.value)) {
-		if (item.to === useSplitRouterPath(to.name?.toString()!, "first")) {
+		if (item.to === useSplitRouterPath(to.name!, "first")) {
 			item.active = true;
 			currentSidebarItemState.value.itemname = itemname;
 			currentSidebarItemState.value.item = item;

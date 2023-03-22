@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 		"nuxt-typed-router",
 		"@nuxt/devtools",
 		"@nuxt/image-edge",
+		"@nuxtjs/tailwindcss",
 	],
 	vuestic: {
 		config: {

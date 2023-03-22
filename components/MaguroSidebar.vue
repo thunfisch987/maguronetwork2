@@ -37,17 +37,13 @@
 					</VaSidebarItemTitle>
 				</VaSidebarItemContent>
 			</VaSidebarItem>
-			<VaSidebarItem
-				v-else
-				:active="item.active"
-				:href="item.href.toString()"
-			>
+			<VaSidebarItem v-else :active="item.active" :href="item.href">
 				<VaSidebarItemContent>
 					<Icon :name="item.icon!" size="2em" />
 					<VaSidebarItemTitle>
 						{{ itemname }}
 					</VaSidebarItemTitle>
-					<VaIcon v-if="item.href" name="open_in_new" />
+					<VaIcon name="open_in_new" />
 				</VaSidebarItemContent>
 			</VaSidebarItem>
 		</template>
