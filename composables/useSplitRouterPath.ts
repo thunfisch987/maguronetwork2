@@ -1,4 +1,3 @@
-import { RouteLocationNormalized } from "vue-router";
 import { RouteRecordName } from "vue-router";
 
 export default function (path: RouteRecordName): Array<string>;
