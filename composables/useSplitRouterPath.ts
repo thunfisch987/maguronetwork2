@@ -1,14 +1,14 @@
 import { RouteRecordName } from "vue-router";
 
 export default function (path: RouteRecordName): Array<string>;
-export default function (path: RouteRecordName, type: "first"): string;
-export default function (path: RouteRecordName, type: "last"): string;
+export default function (path: RouteRecordName, index: "first"): string;
+export default function (path: RouteRecordName, index: "last"): string;
 
-export default function (pathname: RouteRecordName, type?: "first" | "last") {
-	if (!type) {
+export default function (pathname: RouteRecordName, index?: "first" | "last") {
+	if (!index) {
 		return pathname.toString().split("-");
 	} else {
-		switch (type) {
+		switch (index) {
 			case "first":
 				return pathname.toString().split("-")[0];
 			case "last":
