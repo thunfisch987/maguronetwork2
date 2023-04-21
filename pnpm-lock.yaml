@@ -26,8 +26,8 @@ dependencies:
     specifier: ^13.2.2
     version: 13.2.2(sass@1.62.0)(webpack@5.80.0)
   vuestic-ui:
-    specifier: ^1.6.4
-    version: 1.6.4(vue@3.2.47)
+    specifier: ^1.6.2
+    version: 1.6.2(vue@3.2.47)
 
 devDependencies:
   '@nuxt/devtools':
@@ -1450,7 +1450,7 @@ packages:
       chokidar: 3.5.3
       nuxt: 3.4.2(@types/node@18.15.13)(sass@1.62.0)
       pathe: 0.3.9
-      vuestic-ui: 1.6.4(vue@3.2.47)
+      vuestic-ui: 1.6.2(vue@3.2.47)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -6776,8 +6776,8 @@ packages:
       '@vue/server-renderer': 3.2.47(vue@3.2.47)
       '@vue/shared': 3.2.47
 
-  /vuestic-ui@1.6.4(vue@3.2.47):
-    resolution: {integrity: sha512-3ki2gmcr9edo29XLYNCWXOV1ElsoNP1x2EAyallIARU1X9FnLYOZsxkxQqupvSqmjJLtgrv+aZYiQ5dgDlILMw==}
+  /vuestic-ui@1.6.2(vue@3.2.47):
+    resolution: {integrity: sha512-GfsphvjsGAqAVXqsRzNEWXGG7aUGHt/9oTDjVARPjMspNKBhesDZjks/O24dA1Nl006km2eXQVN0fhtpIRp24w==}
     peerDependencies:
       vue: ^3.0.4
     dependencies:
