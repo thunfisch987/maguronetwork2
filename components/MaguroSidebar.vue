@@ -1,13 +1,13 @@
 <template>
 	<VaSidebar
-		position="left"
 		v-model="sidebarEnabled"
+		position="left"
 		style="position: absolute; z-index: 3"
 	>
 		<VaSidebarItem @click="toggleSidebar(false)">
 			<VaSidebarItemContent style="text-align: center">
-				<VaSidebarItemTitle></VaSidebarItemTitle>
-				<VaButton icon="va-arrow-left"></VaButton>
+				<VaSidebarItemTitle />
+				<VaButton icon="va-arrow-left" />
 			</VaSidebarItemContent>
 		</VaSidebarItem>
 		<template
@@ -31,15 +31,27 @@
 						style="width: 2em; height: 2em"
 						loading="lazy"
 					/>
-					<Icon v-else-if="item.icon" :name="item.icon" size="2em" />
+					<Icon
+						v-else-if="item.icon"
+						:name="item.icon"
+						size="2em"
+					/>
 					<VaSidebarItemTitle>
 						{{ itemname }}
 					</VaSidebarItemTitle>
 				</VaSidebarItemContent>
 			</VaSidebarItem>
-			<VaSidebarItem v-else :active="item.active" :href="item.href">
+			<VaSidebarItem
+				v-else
+				:active="item.active"
+				:href="item.href"
+			>
 				<VaSidebarItemContent>
-					<Icon v-if="item.icon" :name="item.icon" size="2em" />
+					<Icon
+						v-if="item.icon"
+						:name="item.icon"
+						size="2em"
+					/>
 					<VaSidebarItemTitle>
 						{{ itemname }}
 					</VaSidebarItemTitle>
