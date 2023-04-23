@@ -7,5 +7,8 @@
     "parser": "vue-eslint-parser",
     "parserOptions": {
         "ecmaVersion": "latest"
+    },
+    "rules": {
+        "vue/html-indent": ["error", "tab"] 
     }
 }
