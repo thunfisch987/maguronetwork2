@@ -3,15 +3,11 @@
     "extends":[
         "eslint:recommended",
         "plugin:vue/vue3-recommended",
-        "@nuxt/eslint-config",
-        "@nuxt/eslint-config-typescript",
-        "@nuxtjs/eslint-config",
         "@nuxtjs/eslint-config-typescript",
         "plugin:@typescript-eslint/recommended"
     ],
     "plugins": [
         "@nuxt/eslint-config",
-        "@nuxt/eslint-config-typescript",
         "@nuxtjs/eslint-config",
         "@nuxtjs/eslint-config-typescript",
         "@typescript-eslint"
