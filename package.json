@@ -24,5 +24,11 @@
 		"sass": "^1.62.0",
 		"sass-loader": "^13.2.2",
 		"vuestic-ui": "^1.6.2"
+	},
+	"eslintConfig": {
+		"extends": [
+			"eslint:recommended",
+			"plugin:vue/recommended"
+		]
 	}
 }
