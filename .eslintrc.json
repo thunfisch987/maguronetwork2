@@ -3,25 +3,23 @@
     "extends":[
         "eslint:recommended",
         "plugin:vue/vue3-recommended",
-        "@nuxtjs/eslint-config-typescript",
         "plugin:@typescript-eslint/recommended"
     ],
     "plugins": [
-        "@nuxtjs/eslint-config-typescript",
         "@typescript-eslint"
-    ],
-    "parser": "vue-eslint-parser",
-    "parserOptions": {
-        "vueFeatures":{
-            "filter": false,
-            "interpolationAsNonHTML": true
-        },
-        "ecmaVersion": 2023,
-        "sourceType": "module",
-        "parser": {
-            "js":"espree",
-            "ts": "@typescript-eslint/parser",
-            "<template>": "espree"
-        }
-    }
+    ]
+    // "parser": "vue-eslint-parser",
+    // "parserOptions": {
+    //     "vueFeatures":{
+    //         "filter": false,
+    //         "interpolationAsNonHTML": true
+    //     },
+    //     "ecmaVersion": 2023,
+    //     "sourceType": "module",
+    //     "parser": {
+    //         "js":"espree",
+    //         "ts": "@typescript-eslint/parser",
+    //         "<template>": "espree"
+    //     }
+    // }
 }
