@@ -4,7 +4,7 @@ export class tabArray<T> extends Array<T> {
 		Object.setPrototypeOf(this, tabArray.prototype);
 	}
 
-	current: number = 0;
+	current = 0;
 	next(): T {
 		if (this.current === this.length - 1) {
 			this.current = -1;
