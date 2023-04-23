@@ -11,7 +11,12 @@
 			"url": "/sidebar-items-schema.json"
 		}
 	],
-	"eslint.validate": [
-		"javascript", "typescript"
+	"eslint.validate": ["javascript", "typescript"],
+	"eslint.workingDirectories": [
+		"./pages",
+		{"pattern": "./pages/*/"},
+		"./components",
+		"./composables",
+		"./middleware",
 	]
 }
