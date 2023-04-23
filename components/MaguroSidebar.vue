@@ -31,7 +31,7 @@
 						style="width: 2em; height: 2em"
 						loading="lazy"
 					/>
-					<Icon v-else :name="item.icon!" size="2em" />
+					<Icon v-else-if="item.icon" :name="item.icon" size="2em" />
 					<VaSidebarItemTitle>
 						{{ itemname }}
 					</VaSidebarItemTitle>
@@ -39,7 +39,7 @@
 			</VaSidebarItem>
 			<VaSidebarItem v-else :active="item.active" :href="item.href">
 				<VaSidebarItemContent>
-					<Icon :name="item.icon!" size="2em" />
+					<Icon v-if="item.icon" :name="item.icon" size="2em" />
 					<VaSidebarItemTitle>
 						{{ itemname }}
 					</VaSidebarItemTitle>
