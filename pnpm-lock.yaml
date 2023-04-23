@@ -45,6 +45,9 @@ devDependencies:
   eslint:
     specifier: ^8.39.0
     version: 8.39.0
+  eslint-plugin-vue:
+    specifier: ^9.11.0
+    version: 9.11.0(eslint@8.39.0)
   nuxt:
     specifier: ^3.4.2
     version: 3.4.2(@types/node@18.16.0)(eslint@8.39.0)(sass@1.62.0)(typescript@5.0.4)
@@ -54,6 +57,9 @@ devDependencies:
   typescript:
     specifier: ^5.0.4
     version: 5.0.4
+  vue-eslint-parser:
+    specifier: ^9.1.1
+    version: 9.1.1(eslint@8.39.0)
 
 packages:
 
