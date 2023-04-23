@@ -7,8 +7,6 @@
         "plugin:@typescript-eslint/recommended"
     ],
     "plugins": [
-        "@nuxt/eslint-config",
-        "@nuxtjs/eslint-config",
         "@nuxtjs/eslint-config-typescript",
         "@typescript-eslint"
     ],
