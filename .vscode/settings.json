@@ -10,5 +10,8 @@
 			"fileMatch": ["sidebarItems.json"],
 			"url": "/sidebar-items-schema.json"
 		}
+	],
+	"eslint.validate": [
+		"javascript", "typescript"
 	]
 }

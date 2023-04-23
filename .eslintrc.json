@@ -2,24 +2,6 @@
     "root": true,
     "extends":[
         "eslint:recommended",
-        "plugin:vue/vue3-recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "plugins": [
-        "@typescript-eslint"
+        "plugin:vue/vue3-recommended"
     ]
-    // "parser": "vue-eslint-parser",
-    // "parserOptions": {
-    //     "vueFeatures":{
-    //         "filter": false,
-    //         "interpolationAsNonHTML": true
-    //     },
-    //     "ecmaVersion": 2023,
-    //     "sourceType": "module",
-    //     "parser": {
-    //         "js":"espree",
-    //         "ts": "@typescript-eslint/parser",
-    //         "<template>": "espree"
-    //     }
-    // }
 }
