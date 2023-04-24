@@ -26,9 +26,9 @@
 </template>
 
 <script lang="ts" setup>
-var toggleSidebar = useToggleSidebar();
-var currentDevice = useDevice();
-var currentSidebarItem = useCurrentSidebarItem();
+const toggleSidebar = useToggleSidebar();
+const currentDevice = useDevice();
+const currentSidebarItem = useCurrentSidebarItem();
 </script>
 
 <style scoped>
