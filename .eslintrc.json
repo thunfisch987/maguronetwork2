@@ -4,7 +4,7 @@
 		"eslint:recommended",
 		"plugin:vue/vue3-recommended",
 		"plugin:@typescript-eslint/recommended",
-		"plugin:@nuxt/eslint-config"
+		"@nuxtjs/eslint-config-typescript"
 	],
 	"parser": "vue-eslint-parser",
 	"parserOptions": {
