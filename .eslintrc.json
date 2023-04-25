@@ -10,7 +10,7 @@
 	"parserOptions": {
 		"sourceType": "module",
 		"ecmaVersion": "latest",
-		"parser": "@typescript-eslint/parser"
+		"parser": { "js": "espree", "ts": "@typescript-eslint/parser" }
 	},
 	"rules": {
 		"vue/html-indent": ["error", "tab"],
@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"import/resolver": {
-			"node":true,
+			"node": true,
 			"typescript": true,
 			"webpack": true,
 			"vite": true,
