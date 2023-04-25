@@ -20,7 +20,8 @@
 			"node":true,
 			"typescript": true,
 			"webpack": true,
-			"vite": true
+			"vite": true,
+			"nuxt": true
 		}
 	}
 }
