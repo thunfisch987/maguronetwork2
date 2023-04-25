@@ -51,9 +51,9 @@
 </template>
 
 <script lang="ts" setup>
-const sidebarEnabled = useSidebarEnable()
-const toggleSidebar = useToggleSidebar()
-const sidebarItems = useSidebarItems()
+const sidebarEnabled = useSidebarEnable();
+const toggleSidebar = useToggleSidebar();
+const sidebarItems = useSidebarItems();
 
-const weebsiteImages = useWeebsiteImages()
+const weebsiteImages = useWeebsiteImages();
 </script>

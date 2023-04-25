@@ -11,8 +11,8 @@
 </template>
 
 <script lang="ts" setup>
-const sidebarEnabled = useSidebarEnable()
-const toggleSidebar = useToggleSidebar()
+const sidebarEnabled = useSidebarEnable();
+const toggleSidebar = useToggleSidebar();
 </script>
 
 <style>

@@ -1,6 +1,6 @@
 export default function () {
-	const weebsiteImages = useWeebsiteImages()
+	const weebsiteImages = useWeebsiteImages();
 	return () => {
-		weebsiteImages.next()
-	}
+		weebsiteImages.next();
+	};
 }
