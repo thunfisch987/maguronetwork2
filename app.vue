@@ -11,8 +11,8 @@
 </template>
 
 <script lang="ts" setup>
-const sidebarEnabled = useSidebarEnable();
-const toggleSidebar = useToggleSidebar();
+const sidebarEnabled = useSidebarEnable()
+const toggleSidebar = useToggleSidebar()
 </script>
 
 <style>
@@ -23,6 +23,7 @@ const toggleSidebar = useToggleSidebar();
 	height: 100vh;
 	display: none;
 }
+
 .sidebar-mask.sidebar-open {
 	display: block;
 }

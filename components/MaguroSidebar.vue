@@ -31,27 +31,15 @@
 						style="width: 2em; height: 2em"
 						loading="lazy"
 					/>
-					<Icon
-						v-else-if="item.icon"
-						:name="item.icon"
-						size="2em"
-					/>
+					<Icon v-else-if="item.icon" :name="item.icon" size="2em" />
 					<VaSidebarItemTitle>
 						{{ itemname }}
 					</VaSidebarItemTitle>
 				</VaSidebarItemContent>
 			</VaSidebarItem>
-			<VaSidebarItem
-				v-else
-				:active="item.active"
-				:href="item.href"
-			>
+			<VaSidebarItem v-else :active="item.active" :href="item.href">
 				<VaSidebarItemContent>
-					<Icon
-						v-if="item.icon"
-						:name="item.icon"
-						size="2em"
-					/>
+					<Icon v-if="item.icon" :name="item.icon" size="2em" />
 					<VaSidebarItemTitle>
 						{{ itemname }}
 					</VaSidebarItemTitle>
@@ -63,9 +51,9 @@
 </template>
 
 <script lang="ts" setup>
-const sidebarEnabled = useSidebarEnable();
-const toggleSidebar = useToggleSidebar();
-const sidebarItems = useSidebarItems();
+const sidebarEnabled = useSidebarEnable()
+const toggleSidebar = useToggleSidebar()
+const sidebarItems = useSidebarItems()
 
-const weebsiteImages = useWeebsiteImages();
+const weebsiteImages = useWeebsiteImages()
 </script>

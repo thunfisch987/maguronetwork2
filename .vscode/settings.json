@@ -11,14 +11,25 @@
 			"url": "/sidebar-items-schema.json"
 		}
 	],
-	"eslint.validate": ["javascript", "typescript"],
-	"eslint.workingDirectories": [
-		"./pages",
-		{ "pattern": "./pages/*/" },
-		"./components",
-		"./composables",
-		"./middleware"
-	],
 	"editor.useTabStops": true,
-	"editor.tabSize": 4
+	"editor.tabSize": 4,
+	"formatFiles.excludedFolders": [
+		"node_modules",
+		".vscode",
+		".git",
+		"dist",
+		".chrome",
+		".nuxt"
+	],
+	"formatFiles.excludePattern": "pnpm-lock.yaml",
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"prettier.semi": false,
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "all",
+	"prettier.singleAttributePerLine": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
