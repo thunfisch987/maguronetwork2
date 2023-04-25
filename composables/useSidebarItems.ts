@@ -1,4 +1,4 @@
-import sidebarJson from '@/assets/json/sidebarItems.json'
+import sidebarJson from '@/assets/json/sidebarItems.json';
 
 export type BaseSidebarItem = {
 	readonly icon?: string;

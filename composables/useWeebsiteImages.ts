@@ -15,10 +15,10 @@ export class tabArray<T> extends Array<T> {
 }
 
 const items = new tabArray<string>(
-	"/evangelion/asuka_smug.png",
-	"/evangelion/cupoftea.PNG",
-	"/evangelion/misato_smug.png",
-	"/evangelion/misato_toast.PNG"
+	'/evangelion/asuka_smug.png',
+	'/evangelion/cupoftea.PNG',
+	'/evangelion/misato_smug.png',
+	'/evangelion/misato_toast.PNG'
 );
 
 const weebsiteImages = reactive<tabArray<string>>(items);
