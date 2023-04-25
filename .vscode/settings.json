@@ -14,9 +14,11 @@
 	"eslint.validate": ["javascript", "typescript"],
 	"eslint.workingDirectories": [
 		"./pages",
-		{"pattern": "./pages/*/"},
+		{ "pattern": "./pages/*/" },
 		"./components",
 		"./composables",
-		"./middleware",
-	]
+		"./middleware"
+	],
+	"editor.useTabStops": true,
+	"editor.tabSize": 4
 }

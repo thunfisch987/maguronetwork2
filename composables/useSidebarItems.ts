@@ -1,4 +1,4 @@
-import sidebarJson from "@/assets/json/sidebarItems.json";
+import sidebarJson from '@/assets/json/sidebarItems.json'
 
 export type BaseSidebarItem = {
 	readonly icon?: string;
@@ -15,5 +15,5 @@ export type SidebarItems = {
 };
 
 export default function () {
-	return useState<SidebarItems>("sidebarItems", () => sidebarJson);
+	return useState<SidebarItems>('sidebarItems', () => sidebarJson);
 }
