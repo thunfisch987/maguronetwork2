@@ -9,6 +9,7 @@ export default defineNuxtConfig({
 		'@nuxt/devtools',
 		'@nuxt/image-edge',
 		'@nuxtjs/tailwindcss',
+		'@pinia/nuxt',
 	],
 	vuestic: {
 		config: {

@@ -1,5 +1,5 @@
-import { RouteLocationNormalized } from 'vue-router';
-import { BaseSidebarItem } from './useSidebarItems';
+import type { RouteLocationNormalized } from 'vue-router';
+import type { BaseSidebarItem } from './useSidebarItems';
 
 export type CurrentSidebarItem = {
 	itemname: string;
