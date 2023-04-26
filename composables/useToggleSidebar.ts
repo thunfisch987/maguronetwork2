@@ -1,11 +1,14 @@
+import { useWeebsiteImagesStore } from '@/stores/weebsiteImages';
+
+
 export default function () {
+	const weebsiteImagesStore = useWeebsiteImagesStore()
 	const sidebarEnabled = useSidebarEnable();
-	const toggleWeebsiteImage = useToggleWeebsiteImage();
 	return (to?: boolean) => {
 		sidebarEnabled.value =
 			typeof to === 'boolean' ? to : !sidebarEnabled.value;
 		if (to === true) {
-			toggleWeebsiteImage();
+			weebsiteImagesStore.next();
 		}
 	};
 }

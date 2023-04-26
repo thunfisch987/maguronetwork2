@@ -27,7 +27,7 @@
 					/>
 					<NuxtImg
 						v-else-if="itemname === 'Nölz\' Weebsite'"
-						:src="weebsiteImages[weebsiteImages.current]"
+						:src="weebsiteImages.current"
 						style="width: 2em; height: 2em"
 						loading="lazy"
 					/>
@@ -51,9 +51,11 @@
 </template>
 
 <script lang="ts" setup>
+import { useWeebsiteImagesStore } from '~/stores/weebsiteImages';
+
 const sidebarEnabled = useSidebarEnable();
 const toggleSidebar = useToggleSidebar();
 const sidebarItems = useSidebarItems();
 
-const weebsiteImages = useWeebsiteImages();
+const weebsiteImages = useWeebsiteImagesStore();
 </script>
