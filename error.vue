@@ -1,43 +1,39 @@
 <template>
-	<div class="grid h-screen place-items-center">
-		<span> four - oh - four </span>
-		<br />
-		<hr />
-		<br />
-		<span>{{ props.error }}</span>
+	<div>
+		<span>{{ props.error.statusCode }}</span>
 	</div>
 </template>
 
 <script setup lang="ts">
-import Error from 'nuxt';
+type ErrorProps = {
+	url: string;
+	statusCode: 404;
+	statusMessage: string;
+	message: string;
+	stack: string;
+};
 
-const props = defineProps<{ error: Object }>();
-console.log('------');
-console.dir(props.error);
-console.log('------');
+const props = defineProps<{ error: ErrorProps }>();
 
-const names = [
-	'Traveller',
-	'M8',
-	'Thanos',
-	'Random Person',
-	'Visitor',
-	'Again',
-	'Blyat',
-	'Mr. Stark',
-	'Carl',
-];
-const names2 = [
+const names = ['Thanos', 'Random Person', 'Again', 'Carl'];
+type Quotes = {
+	first: string;
+	last: string;
+	special?: string;
+	reference: string;
+};
+
+const names2: Array<Quotes> = [
 	{
-		first: 'Wake up,',
-		last: 'Samurai',
-		special: ', we have a city to burn!',
+		first: 'Wake up, ',
+		last: 'Samurai, ',
+		special: 'we have a city to burn!',
 		reference: 'Cyberpunk 2077',
 	},
 	{
-		first: 'Rise and Shine,',
-		last: 'Mr. Freeman',
-		special: ', Rise and Shine',
+		first: 'Rise and Shine, ',
+		last: 'Mr. Freeman, ',
+		special: 'Rise and Shine',
 		reference: 'Half Life',
 	},
 	{
@@ -46,19 +42,29 @@ const names2 = [
 		reference: 'Adele',
 	},
 	{
-		first: '',
-		last: '',
-		reference: '',
+		first: 'Hey you!',
+		last: "You're finally awake!",
+		reference: 'Todroll, Skyrim',
 	},
 	{
-		first: '',
-		last: '',
-		reference: '',
+		first: 'Mr. Stark, ',
+		last: "i don't feel so good...",
+		reference: 'MCU/Avengers',
 	},
 	{
-		first: '',
-		last: '',
-		reference: '',
+		first: "Mornin', ",
+		last: 'Traveller',
+		reference: '???',
+	},
+	{
+		first: 'Take this, ',
+		last: "it's dangerous to go alone",
+		reference: 'Zelda',
+	},
+	{
+		first: 'Hello',
+		last: 'from the other side...',
+		reference: 'Adele',
 	},
 ];
 </script>
