@@ -6,7 +6,6 @@ export default defineNuxtConfig({
 		'@nuxtjs/device',
 		'nuxt-icon',
 		'nuxt-typed-router',
-		'@nuxt/devtools',
 		'@nuxt/image-edge',
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
@@ -34,15 +33,10 @@ export default defineNuxtConfig({
 			style: [],
 			script: [],
 			noscript: [],
-			// title: "MaguroNetwork",
 			htmlAttrs: {
 				lang: 'en',
-				style: 'min-height: 100vh; min-width: 100vw',
 			},
 			title: 'MaguroNetwork2',
 		},
-	},
-	typescript: {
-		shim: true,
 	},
 });
