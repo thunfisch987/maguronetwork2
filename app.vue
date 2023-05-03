@@ -7,7 +7,7 @@
 		:class="{ 'sidebar-open': sidebarEnabled }"
 		@click="toggleSidebar(false)"
 	/>
-	<NuxtPage />
+	<!-- <NuxtPage /> -->
 </template>
 
 <script lang="ts" setup>
