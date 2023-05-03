@@ -1,19 +1,18 @@
 <template>
-	<span>yeet</span>
-	<!-- <NuxtLoadingIndicator :throttle="0" /> -->
-	<MaguroNavbar />
-	<!-- <MaguroSidebar /> -->
-	<!-- <div
+	<NuxtLoadingIndicator :throttle="0" />
+	<!-- <MaguroNavbar /> -->
+	<MaguroSidebar />
+	<div
 		class="sidebar-mask"
 		:class="{ 'sidebar-open': sidebarEnabled }"
 		@click="toggleSidebar(false)"
-	/> -->
-	<!-- <NuxtPage /> -->
+	/>
+	<NuxtPage />
 </template>
 
 <script lang="ts" setup>
-// const sidebarEnabled = useSidebarEnable();
-// const toggleSidebar = useToggleSidebar();
+const sidebarEnabled = useSidebarEnable();
+const toggleSidebar = useToggleSidebar();
 </script>
 
 <style>
