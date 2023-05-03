@@ -1,8 +1,8 @@
 <template>
 	<span>yeet</span>
 	<!-- <NuxtLoadingIndicator :throttle="0" /> -->
-	<!-- <MaguroNavbar /> -->
-	<MaguroSidebar />
+	<MaguroNavbar />
+	<!-- <MaguroSidebar /> -->
 	<!-- <div
 		class="sidebar-mask"
 		:class="{ 'sidebar-open': sidebarEnabled }"
