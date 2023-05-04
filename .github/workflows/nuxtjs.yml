@@ -2,12 +2,12 @@
 #
 # To get started with Nuxt see: https://nuxtjs.org/docs/get-started/installation
 #
-name: Deploy Nuxt site to Pages
+name: deploy
 
 on:
     # Runs on pushes targeting the default branch
     push:
-        branches: ["develop"]
+        branches: ['develop']
 
     # Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
@@ -20,7 +20,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-    group: "pages"
+    group: 'pages'
     cancel-in-progress: true
 
 jobs:
@@ -45,7 +45,7 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v3
               with:
-                  node-version: "20.0.0"
+                  node-version: '20.0.0'
 
             - name: Setup pnpm
               uses: pnpm/action-setup@v2
@@ -95,5 +95,5 @@ jobs:
                   cd deploy
                   cp -RT ../.output/ .
                   git add .
-                  git diff --staged --quiet || git commit -m "Update Artifacts"
+                  git diff --staged --quiet || git commit -m "${{ github.event.head_commit.message }}"
                   git push
