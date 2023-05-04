@@ -1,7 +1,7 @@
 <template>
 	<!-- <NuxtLoadingIndicator :throttle="0" /> -->
 	<!-- <MaguroNavbar /> -->
-	<MaguroSidebar />
+	<!-- <MaguroSidebar /> -->
 	<!-- <div
 		class="sidebar-mask"
 		:class="{ 'sidebar-open': sidebarEnabled }"
