@@ -1,6 +1,6 @@
 <template>
 	<!-- <NuxtLoadingIndicator :throttle="0" /> -->
-	<MaguroNavbar />
+	<!-- <MaguroNavbar /> -->
 	<MaguroSidebar />
 	<div
 		class="sidebar-mask"
