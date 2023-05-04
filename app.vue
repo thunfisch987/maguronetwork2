@@ -1,5 +1,5 @@
 <template>
-	<!-- <NuxtLoadingIndicator :throttle="0" /> -->
+	<NuxtLoadingIndicator :throttle="0" />
 	<!-- <MaguroNavbar /> -->
 	<!-- <MaguroSidebar /> -->
 	<!-- <div
@@ -7,7 +7,7 @@
 		:class="{ 'sidebar-open': sidebarEnabled }"
 		@click="toggleSidebar(false)"
 	/> -->
-	<NuxtPage />
+	<!-- <NuxtPage /> -->
 	<span>yeet</span>
 </template>
 
