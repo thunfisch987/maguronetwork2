@@ -1,14 +1,15 @@
 <template>
-	<NuxtLoadingIndicator :throttle="0" />
-	<!-- <MaguroNavbar /> -->
-	<!-- <MaguroSidebar /> -->
-	<!-- <div
-		class="sidebar-mask"
-		:class="{ 'sidebar-open': sidebarEnabled }"
-		@click="toggleSidebar(false)"
-	/> -->
-	<!-- <NuxtPage /> -->
-	<span>yeet</span>
+	<div>
+		<!-- <NuxtLoadingIndicator :throttle="0" /> -->
+		<MaguroNavbar />
+		<MaguroSidebar />
+		<!-- <div
+			class="sidebar-mask"
+			:class="{ 'sidebar-open': sidebarEnabled }"
+			@click="useToggleSidebar(false)"
+		/> -->
+		<NuxtPage />
+	</div>
 </template>
 
 <script lang="ts" setup>
@@ -24,7 +25,7 @@
 	display: none;
 
 	&.sidebar-open {
-	display: block;
+		display: block;
 	}
 }
 </style>
