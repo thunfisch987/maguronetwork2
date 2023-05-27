@@ -1,6 +1,6 @@
 <template>
 	<VaSidebar
-		v-model="sidebarEnabled"
+		:minimized="sidebarEnabled"
 		position="left"
 		style="position: absolute; z-index: 3"
 	>
