@@ -6,14 +6,14 @@
 		<div
 			class="sidebar-mask"
 			:class="{ 'sidebar-open': sidebarEnabled }"
-			@click="useToggleSidebar(false)"
+			@click="useToggleSidebar(true)"
 		/>
 		<NuxtPage />
 	</div>
 </template>
 
 <script lang="ts" setup>
-// const sidebarEnabled = useSidebarEnable();
+const sidebarEnabled = useSidebarEnable();
 </script>
 
 <style lang="scss">
