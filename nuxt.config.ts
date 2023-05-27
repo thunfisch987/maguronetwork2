@@ -39,4 +39,5 @@ export default defineNuxtConfig({
 			title: 'MaguroNetwork2',
 		},
 	},
+	plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
 });
