@@ -4,6 +4,9 @@ dependencies:
   '@nuxtjs/tailwindcss':
     specifier: ^6.7.0
     version: 6.7.0(webpack@5.83.1)
+  '@nuxtjs/web-vitals':
+    specifier: ^0.2.6
+    version: 0.2.6
   '@pinia/nuxt':
     specifier: ^0.4.11
     version: 0.4.11(vue@3.3.4)
@@ -1087,6 +1090,19 @@ packages:
       - supports-color
       - ts-node
       - webpack
+    dev: false
+
+  /@nuxtjs/web-vitals@0.2.6:
+    resolution: {integrity: sha512-hoLo/Lcl63rDEm1gR/VN3sSG7mO4UKzJF69lyKjm+cSWtnSinSQo4n/8V0qmDqVgC3GPfvC1X/IqZx5FaRSS/g==}
+    dependencies:
+      '@nuxt/kit': 3.5.1
+      defu: 6.1.2
+      pathe: 1.1.0
+      ufo: 1.1.2
+      web-vitals: 3.3.1
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: false
 
   /@pinia/nuxt@0.4.11(vue@3.3.4):
@@ -7106,6 +7122,10 @@ packages:
   /web-streams-polyfill@3.2.1:
     resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==}
     engines: {node: '>= 8'}
+
+  /web-vitals@3.3.1:
+    resolution: {integrity: sha512-LTfY5GjcY3ngFzNsYFSYL+AmVmlWrzPTUxSMDis2rZbf+SzT7HH3NH4Y/l45XOlrAIunOBeURN9qtBHkRskAiA==}
+    dev: false
 
   /webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
