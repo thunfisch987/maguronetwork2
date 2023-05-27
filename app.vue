@@ -1,13 +1,13 @@
 <template>
 	<div>
-		<!-- <NuxtLoadingIndicator :throttle="0" /> -->
+		<NuxtLoadingIndicator :throttle="0" />
 		<MaguroNavbar />
 		<MaguroSidebar />
-		<!-- <div
+		<div
 			class="sidebar-mask"
 			:class="{ 'sidebar-open': sidebarEnabled }"
 			@click="useToggleSidebar(false)"
-		/> -->
+		/>
 		<NuxtPage />
 	</div>
 </template>
