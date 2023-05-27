@@ -4,7 +4,7 @@
 		position="left"
 		style="position: absolute; z-index: 3"
 	>
-		<VaSidebarItem @click="useToggleSidebar(false)">
+		<VaSidebarItem @click="useToggleSidebar(true)">
 			<VaSidebarItemContent style="text-align: center">
 				<VaSidebarItemTitle />
 				<VaButton icon="va-arrow-left" />
