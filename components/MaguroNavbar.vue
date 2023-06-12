@@ -4,21 +4,50 @@
 			<VaNavbarItem>
 				<VaButton
 					icon="va-arrow-right"
-					@click="useToggleSidebar(true)"
+					@click="useToggleSidebar(!sidebarEnable)"
 				/>
 			</VaNavbarItem>
 			<VaNavbarItem v-if="currentDevice.isMobile" class="logo mainlogo">
 				MaguroNetwork
 			</VaNavbarItem>
+			<NuxtImg
+				v-if="
+					currentDevice.isMobile &&
+					(currentSite === 'Weebsite' ||
+						currentSite === 'RandomMemes')
+				"
+				:src="useNavbarIconStore().src"
+				style="width: 2em; height: 2em"
+			/>
+			<Icon
+				v-else-if="currentDevice.isMobile"
+				:name="useNavbarIconStore().name"
+				size="2em"
+			/>
 		</template>
 		<template v-if="!currentDevice.isMobile" #default>
-			<VaNavbarItem class="logo mainlogo"> MaguroNetwork </VaNavbarItem>
+			<VaNavbarItem class="title">
+				<span class="logo mainlogo">MaguroNetwork</span>
+			</VaNavbarItem>
+		</template>
+		<template v-if="!currentDevice.isMobile" #right>
+			<NuxtImg
+				v-if="
+					currentSite === 'Weebsite' || currentSite === 'RandomMemes'
+				"
+				:src="useNavbarIconStore().src"
+				style="width: 2em; height: 2em"
+			/>
+			<Icon v-else :name="useNavbarIconStore().name" size="2em" />
 		</template>
 	</VaNavbar>
 </template>
 
 <script lang="ts" setup>
+import { useNavbarIconStore } from '~/stores/navbarIcon';
 const currentDevice = useDevice();
+const currentSite = useCurrentSite();
+const sidebarEnable = useSidebarEnable();
 </script>
 
 <style>

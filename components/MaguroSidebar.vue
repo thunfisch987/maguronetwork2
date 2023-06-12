@@ -1,17 +1,17 @@
 <template>
 	<VaSidebar
-		:minimized="sidebarEnabled"
+		v-model="sidebarEnabled"
 		position="left"
 		style="position: absolute; z-index: 3"
 	>
-		<VaSidebarItem @click="useToggleSidebar(true)">
+		<VaSidebarItem @click="useToggleSidebar(!sidebarEnabled)">
 			<VaSidebarItemContent style="text-align: center">
 				<VaSidebarItemTitle />
 				<VaButton icon="va-arrow-left" />
 			</VaSidebarItemContent>
 		</VaSidebarItem>
 		<!--  -->
-		<!-- MagurNetwork -->
+		<!-- MaguroNetwork -->
 		<!--  -->
 		<VaSidebarItem
 			:to="{ name: 'index' }"
@@ -29,8 +29,8 @@
 			:active="$route.name === 'Akela'"
 		>
 			<VaSidebarItemContent>
-				<Icon name="twemoji:dog-face" size="2em" />
 				<VaSidebarItemTitle> Akela </VaSidebarItemTitle>
+				<Icon name="twemoji:dog-face" size="2rem" />
 			</VaSidebarItemContent>
 		</VaSidebarItem>
 		<!--  -->
@@ -41,8 +41,8 @@
 			:active="$route.name === 'EnergyDrinkWiki'"
 		>
 			<VaSidebarItemContent>
-				<Icon name="pepicons:can" size="2em" />
 				<VaSidebarItemTitle> EnergyDrinkWiki </VaSidebarItemTitle>
+				<Icon name="pepicons:can" size="2em" />
 			</VaSidebarItemContent>
 		</VaSidebarItem>
 		<!--  -->
@@ -53,12 +53,12 @@
 			:active="$route.name === 'RandomMemes'"
 		>
 			<VaSidebarItemContent>
+				<VaSidebarItemTitle> RandomMemes </VaSidebarItemTitle>
 				<NuxtImg
-					src="/fuckboi.png"
+					src="fuckboi.png"
 					loading="lazy"
 					style="width: 2em; height: 2em"
 				/>
-				<VaSidebarItemTitle> RandomMemes </VaSidebarItemTitle>
 			</VaSidebarItemContent>
 		</VaSidebarItem>
 		<!--  -->
@@ -69,8 +69,8 @@
 			:active="$route.name === 'Vegalou'"
 		>
 			<VaSidebarItemContent>
-				<Icon name="twemoji:llama" size="2em" />
 				<VaSidebarItemTitle> Vegalou </VaSidebarItemTitle>
+				<Icon name="twemoji:llama" size="2em" />
 			</VaSidebarItemContent>
 		</VaSidebarItem>
 		<!--  -->
@@ -81,12 +81,12 @@
 			:active="$route.name === 'Weebsite'"
 		>
 			<VaSidebarItemContent>
+				<VaSidebarItemTitle> Weebsite </VaSidebarItemTitle>
 				<NuxtImg
 					:src="useWeebsiteImagesStore().current"
 					style="width: 2em; height: 2em"
 					loading="lazy"
 				/>
-				<VaSidebarItemTitle> Weebsite </VaSidebarItemTitle>
 			</VaSidebarItemContent>
 		</VaSidebarItem>
 		<!--  -->
@@ -94,9 +94,12 @@
 		<!--  -->
 		<VaSidebarItem href="https://oldr4e.littlebitgay.de">
 			<VaSidebarItemContent>
+				<!-- <VaIcon name="open_in_new" /> -->
+				<VaSidebarItemTitle>
+					<span>Razer4Ever</span>
+					<VaIcon name="open_in_new" />
+				</VaSidebarItemTitle>
 				<Icon name="simple-icons:razer" size="2em" />
-				<VaSidebarItemTitle> Razer4Ever </VaSidebarItemTitle>
-				<VaIcon name="open_in_new" />
 			</VaSidebarItemContent>
 		</VaSidebarItem>
 		<!--  -->
@@ -104,9 +107,12 @@
 		<!--  -->
 		<VaSidebarItem href="https://rg.littlebitgay.de">
 			<VaSidebarItemContent>
+				<!-- <VaIcon name="open_in_new"/> -->
+				<VaSidebarItemTitle>
+					<span>Rocketgame</span>
+					<VaIcon name="open_in_new" />
+				</VaSidebarItemTitle>
 				<Icon name="twemoji:rocket" size="2em" />
-				<VaSidebarItemTitle> Rocketgame </VaSidebarItemTitle>
-				<VaIcon name="open_in_new" />
 			</VaSidebarItemContent>
 		</VaSidebarItem>
 	</VaSidebar>

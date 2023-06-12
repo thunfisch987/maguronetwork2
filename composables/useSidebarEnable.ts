@@ -1,3 +1,3 @@
 export default function () {
-	return useState<boolean>('sidebarEnabled', () => true);
+	return useState<boolean>('sidebarEnabled', () => false);
 }
