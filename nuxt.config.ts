@@ -9,15 +9,7 @@ export default defineNuxtConfig({
 		'@nuxt/image-edge',
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
-		'@nuxtjs/web-vitals'
 	],
-	vuestic: {
-		config: {
-			colors: {
-				currentPresetName: 'dark',
-			},
-		},
-	},
 	css: ['assets/css/main.scss'],
 	app: {
 		head: {
@@ -40,5 +32,4 @@ export default defineNuxtConfig({
 			title: 'MaguroNetwork2',
 		},
 	},
-	plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
 });
