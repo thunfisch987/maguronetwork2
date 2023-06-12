@@ -21,5 +21,10 @@
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[vue]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"tailwindCSS.includeLanguages": { "vue": "html", "vue-html": "html" },
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
 	}
 }

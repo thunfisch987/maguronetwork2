@@ -1,16 +1,29 @@
 // Do not insert custom values to the colors or breakpoints Vuestic UI config
 // or they will be overwritten! Use Tailwind CSS config instead.
 
-export default {
-	breakpoints: {
+import { createIconsConfig, defineVuesticConfig } from 'vuestic-ui';
+
+export default defineVuesticConfig({
+	breakpoint: {
 		thresholds: {
 			sm: 640,
 			md: 768,
 			lg: 1024,
 			xl: 1280,
-			'2xl': 1536,
+			// '2xl': 1536,
 		},
 	},
+	icons: createIconsConfig({
+		fonts: [
+			{
+				name: 'twemoji:{code}',
+				resolve: ({ code }) => ({
+					tag: 'Icon',
+					attrs: { name: `${code}` },
+				}),
+			},
+		],
+	}),
 	colors: {
 		currentPresetName: 'dark',
 		variables: {
@@ -260,4 +273,4 @@ export default {
 			'rose-950': '#4c0519',
 		},
 	},
-};
+});
