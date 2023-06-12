@@ -6,12 +6,6 @@
 		"**/.nuxt": true,
 		"pnpm-lock.yaml": true
 	},
-	"json.schemas": [
-		{
-			"fileMatch": ["sidebarItems.json"],
-			"url": "/sidebar-items-schema.json"
-		}
-	],
 	"editor.useTabStops": true,
 	"editor.tabSize": 4,
 	"formatFiles.excludedFolders": [
