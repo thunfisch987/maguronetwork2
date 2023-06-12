@@ -26,5 +26,7 @@
 	"editor.quickSuggestions": {
 		"strings": "on"
 	},
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
 	}
 }
