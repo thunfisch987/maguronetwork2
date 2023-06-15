@@ -4,46 +4,38 @@ import { useWeebsiteImagesStore } from './weebsiteImages';
 export type navbarIconType = {
 	currentSite: string;
 	name: string;
-	src: string;
 };
 
-export const useNavbarIconStore = defineStore('currentNavbarIcon', {
-	state: (): navbarIconType => ({
-		currentSite: '',
-		name: '',
-		src: '',
-	}),
-	actions: {
-		toggleIcon(currentSiteInput: string) {
-			this.currentSite = currentSiteInput;
-			switch (currentSiteInput) {
-				case 'index':
-					this.name = '';
-					break;
+export const useNavbarIconStore = defineStore('currentNavbarIcon', () => {
+	const src = computed(() => {
+		switch (useCurrentSite().value) {
+			case 'RandomMemes':
+				return 'fuckboi.png';
+				break;
+			case 'Weebsite':
+				return useWeebsiteImagesStore().currentImage;
+			default:
+				return '';
+		}
+	});
 
-				case 'Akela':
-					this.name = 'twemoji:dog-face';
-					break;
+	const iconName = computed(() => {
+		switch (useCurrentSite().value) {
+			case 'index':
+				return '';
 
-				case 'EnergyDrinkWiki':
-					this.name = 'pepicons:can';
-					break;
+			case 'Akela':
+				return 'twemoji:dog-face';
 
-				case 'RandomMemes':
-					this.src = 'fuckboi.png';
-					break;
+			case 'EnergyDrinkWiki':
+				return 'pepicons:can';
 
-				case 'Vegalou':
-					this.name = 'twemoji:llama';
-					break;
+			case 'Vegalou':
+				return 'twemoji:llama';
 
-				case 'Weebsite':
-					this.src = useWeebsiteImagesStore().current;
-					break;
-
-				default:
-					console.error('useNavbarIconToggle switch case error');
-			}
-		},
-	},
+			default:
+				return '';
+		}
+	});
+	return { src, iconName };
 });

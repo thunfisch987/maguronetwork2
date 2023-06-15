@@ -13,15 +13,15 @@ export const useWeebsiteImagesStore = defineStore('weebsiteImages', {
 		};
 	},
 	getters: {
-		current: (state) => state.allImages[state.index],
+		currentImage: (state) => state.allImages[state.index],
 	},
 	actions: {
-        next(){
-            if (this.index === this.allImages.length - 1) {
+		next() {
+			if (this.index === this.allImages.length - 1) {
 				this.index = -1;
 				return this.allImages[++this.index];
 			}
 			return this.allImages[this.index++];
-        }
-    },
+		},
+	},
 });

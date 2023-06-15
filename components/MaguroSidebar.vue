@@ -83,7 +83,7 @@
 			<VaSidebarItemContent>
 				<VaSidebarItemTitle> Weebsite </VaSidebarItemTitle>
 				<NuxtImg
-					:src="useWeebsiteImagesStore().current"
+					:src="useWeebsiteImagesStore().currentImage"
 					style="width: 2em; height: 2em"
 					loading="lazy"
 				/>

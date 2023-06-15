@@ -21,7 +21,7 @@
 			/>
 			<Icon
 				v-else-if="currentDevice.isMobile"
-				:name="useNavbarIconStore().name"
+				:name="useNavbarIconStore().iconName"
 				size="2em"
 			/>
 		</template>
@@ -38,7 +38,7 @@
 				:src="useNavbarIconStore().src"
 				style="width: 2em; height: 2em"
 			/>
-			<Icon v-else :name="useNavbarIconStore().name" size="2em" />
+			<Icon v-else :name="useNavbarIconStore().iconName" size="2em" />
 		</template>
 	</VaNavbar>
 </template>
