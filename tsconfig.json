@@ -3,5 +3,8 @@
 	"extends": "./.nuxt/tsconfig.json",
 	"compilerOptions": {
 		"noImplicitThis": true
-	}
+	},
+	"files": [
+		"./utils/router.d.ts"
+	]
 }

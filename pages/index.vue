@@ -5,7 +5,7 @@
 			:key="route.path"
 			style="color: white"
 		>
-			{{ route.name?.toString().split('-')[0] }}
+			{{ route.name }}
 		</li>
 	</ul>
 </template>

@@ -9,6 +9,7 @@ export default defineNuxtConfig({
 		'@nuxt/image-edge',
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
+		'@nuxtjs/html-validator',
 	],
 	css: ['assets/css/main.scss'],
 	app: {
@@ -30,6 +31,15 @@ export default defineNuxtConfig({
 				lang: 'en',
 			},
 			title: 'MaguroNetwork2',
+		},
+	},
+	hooks: {
+		'pages:extend'(pages) {
+			pages.forEach((page) => {
+				page.meta = {
+					parentName: page.name?.split('-')[0],
+				};
+			});
 		},
 	},
 });

@@ -8,11 +8,14 @@
 		:class="{ 'sidebar-open': sidebarEnabled }"
 		@click="useToggleSidebar(!sidebarEnabled)"
 	/>
+	<i>{{ useRoute().name }}</i>
+	<b>{{ useRoute().meta.parentName }}</b>
 </template>
 
 <script lang="ts" setup>
 const sidebarEnabled = useSidebarEnable();
 </script>
+:
 
 <style lang="scss">
 .sidebar-mask {

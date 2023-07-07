@@ -8,10 +8,9 @@ export type navbarIconType = {
 
 export const useNavbarIconStore = defineStore('currentNavbarIcon', () => {
 	const src = computed(() => {
-		switch (useCurrentSite().value) {
+		switch (useRoute().meta.parentName) {
 			case 'RandomMemes':
 				return 'fuckboi.png';
-				break;
 			case 'Weebsite':
 				return useWeebsiteImagesStore().currentImage;
 			default:
@@ -20,7 +19,7 @@ export const useNavbarIconStore = defineStore('currentNavbarIcon', () => {
 	});
 
 	const iconName = computed(() => {
-		switch (useCurrentSite().value) {
+		switch (useRoute().meta.parentName) {
 			case 'index':
 				return '';
 

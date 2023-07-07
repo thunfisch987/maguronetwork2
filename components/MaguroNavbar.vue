@@ -46,7 +46,7 @@
 <script lang="ts" setup>
 import { useNavbarIconStore } from '~/stores/navbarIcon';
 const currentDevice = useDevice();
-const currentSite = useCurrentSite();
+const currentSite = useRoute().meta.parentName;
 const sidebarEnable = useSidebarEnable();
 </script>
 
