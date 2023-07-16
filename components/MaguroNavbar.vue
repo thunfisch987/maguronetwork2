@@ -4,6 +4,7 @@
 			<VaNavbarItem>
 				<VaButton
 					icon="va-arrow-right"
+					aria-label="Open Sidebar"
 					@click="useToggleSidebar(!sidebarEnable)"
 				/>
 			</VaNavbarItem>
@@ -18,6 +19,7 @@
 				"
 				:src="useNavbarIconStore().src"
 				style="width: 2em; height: 2em"
+				alt="Icon for current site"
 			/>
 			<Icon
 				v-else-if="currentDevice.isMobile"
@@ -37,6 +39,7 @@
 				"
 				:src="useNavbarIconStore().src"
 				style="width: 2em; height: 2em"
+				alt="Icon for current site"
 			/>
 			<Icon v-else :name="useNavbarIconStore().iconName" size="2em" />
 		</template>
@@ -57,11 +60,8 @@ const sidebarEnable = useSidebarEnable();
 	--c2: #4e4f51;
 	--c3: #3c3c3c;
 
-	background: repeating-conic-gradient(
-				from 30deg,
-				#0000 0 120deg,
-				var(--c3) 0 180deg
-			)
+	background:
+		repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg)
 			calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
 		repeating-conic-gradient(
 			from 30deg,
