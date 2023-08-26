@@ -19,7 +19,7 @@
 		"@types/node": "^20.4.5"
 	},
 	"dependencies": {
-		"@nuxt/image-edge": "1.0.0-rc.1-28215841.343dda0",
+		"@nuxt/image-edge": "1.0.0-rc.1-28217290.de85e17",
 		"@nuxtjs/device": "^3.1.0",
 		"@nuxtjs/tailwindcss": "^6.8.0",
 		"@pinia/nuxt": "^0.4.11",
