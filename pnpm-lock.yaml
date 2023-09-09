@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@nuxt/image-edge':
-    specifier: 1.0.0-rc.1-28236947.6058c63
-    version: 1.0.0-rc.1-28236947.6058c63
+    specifier: 1.0.0-rc.1-28237811.ae81f77
+    version: 1.0.0-rc.1-28237811.ae81f77
   '@nuxtjs/device':
     specifier: ^3.1.0
     version: 3.1.0
@@ -1207,8 +1207,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@nuxt/image-edge@1.0.0-rc.1-28236947.6058c63:
-    resolution: {integrity: sha512-65br9aBarW1eQfrmO4QFWNZMF45gDeguB//PTj4nDlbJzh3g9KKr+8ZOtcR6XbWxpDK68G1RzGye2VGSS8HyYw==}
+  /@nuxt/image-edge@1.0.0-rc.1-28237811.ae81f77:
+    resolution: {integrity: sha512-gWG2isZKVBi3eFWUc1osEQeqtxu8DbibKLw0bdKKkG0tMmnOOOEo2pr6ckD6Cj15TatAnMf4Mvso5tV40AOc+w==}
     engines: {node: ^14.16.0 || >=16.11.0}
     dependencies:
       '@nuxt/kit': 3.7.1
