@@ -3,4 +3,9 @@
   "extends": [
     "github>thunfisch987/thunfisch987"
   ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "at any time",
+    "automerge": false
+  },
 }
