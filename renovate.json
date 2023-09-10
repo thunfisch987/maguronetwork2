@@ -3,4 +3,7 @@
   "extends": [
     "github>thunfisch987/thunfisch987"
   ],
+  "lockFileMaintenance": {
+    "automerge": false
+  }
 }
