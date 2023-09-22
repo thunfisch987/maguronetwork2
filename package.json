@@ -16,7 +16,8 @@
 		"eslint-config-prettier": "latest",
 		"nuxt": "latest",
 		"prettier": "latest",
-		"@types/node": "latest"
+		"@types/node": "latest",
+		"bun-types": "latest"
 	},
 	"dependencies": {
 		"@nuxt/image-edge": "latest",
