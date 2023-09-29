@@ -1,37 +1,38 @@
 {
-	"private": true,
-	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
-		"analyze": "nuxt build --analyze"
-	},
-	"devDependencies": {
-		"@nuxt/devtools": "latest",
-		"@nuxtjs/eslint-config-typescript": "latest",
-		"@nuxtjs/html-validator": "latest",
-		"eslint": "latest",
-		"eslint-config-prettier": "latest",
-		"nuxt": "latest",
-		"prettier": "latest",
-		"@types/node": "latest",
-		"bun-types": "latest"
-	},
-	"dependencies": {
-		"@nuxt/image-edge": "latest",
-		"@nuxtjs/device": "latest",
-		"@nuxtjs/tailwindcss": "latest",
-		"@pinia/nuxt": "latest",
-		"@vuestic/nuxt": "latest",
-		"@vuestic/tailwind": "latest",
-		"nuxt-icon": "latest",
-		"nuxt-typed-router": "latest",
-		"pinia": "latest",
-		"sass": "latest",
-		"sass-loader": "latest",
-		"sharp": "latest",
-		"vuestic-ui": "latest"
-	}
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "analyze": "nuxt build --analyze"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "@nuxtjs/html-validator": "latest",
+    "@types/node": "latest",
+    "@vite-pwa/nuxt": "^0.1.1",
+    "bun-types": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "nuxt": "latest",
+    "prettier": "latest"
+  },
+  "dependencies": {
+    "@nuxt/image-edge": "latest",
+    "@nuxtjs/device": "latest",
+    "@nuxtjs/tailwindcss": "latest",
+    "@pinia/nuxt": "latest",
+    "@vuestic/nuxt": "latest",
+    "@vuestic/tailwind": "latest",
+    "nuxt-icon": "latest",
+    "nuxt-typed-router": "latest",
+    "pinia": "latest",
+    "sass": "latest",
+    "sass-loader": "latest",
+    "sharp": "latest",
+    "vuestic-ui": "latest"
+  }
 }

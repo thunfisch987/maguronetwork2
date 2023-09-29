@@ -10,6 +10,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
 		'@nuxtjs/html-validator',
+		'@vite-pwa/nuxt',
 	],
 	css: ['assets/css/main.scss'],
 	app: {
