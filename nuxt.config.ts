@@ -6,7 +6,6 @@ export default defineNuxtConfig({
 		'@nuxtjs/device',
 		'nuxt-icon',
 		'nuxt-typed-router',
-		'@nuxt/image-edge',
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
 		'@nuxtjs/html-validator',
