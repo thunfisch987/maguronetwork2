@@ -21,7 +21,7 @@
     "prettier": "latest"
   },
   "dependencies": {
-    "@nuxt/image-edge": "latest",
+    "@nuxt/image": "latest",
     "@nuxtjs/device": "latest",
     "@nuxtjs/tailwindcss": "latest",
     "@pinia/nuxt": "latest",
