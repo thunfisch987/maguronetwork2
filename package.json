@@ -14,7 +14,7 @@
     "@nuxtjs/html-validator": "latest",
     "@types/node": "latest",
     "@vite-pwa/nuxt": "latest",
-    "bun-types": "latest",
+    "@types/bun": "latest",
     "eslint": "latest",
     "eslint-config-prettier": "latest",
     "nuxt": "latest",
