@@ -2,15 +2,16 @@
 
 export default defineNuxtConfig({
 	modules: [
-		'@vuestic/nuxt',
-		'@nuxtjs/device',
-		'nuxt-icon',
-		'nuxt-typed-router',
-		'@nuxtjs/tailwindcss',
-		'@pinia/nuxt',
-		'@nuxtjs/html-validator',
-		'@vite-pwa/nuxt',
-	],
+        '@vuestic/nuxt',
+        '@nuxtjs/device',
+        'nuxt-icon',
+        'nuxt-typed-router',
+        '@nuxtjs/tailwindcss',
+        '@pinia/nuxt',
+        '@nuxtjs/html-validator',
+        '@vite-pwa/nuxt',
+        "@nuxt/image"
+    ],
 	css: ['assets/css/main.scss'],
 	app: {
 		head: {
