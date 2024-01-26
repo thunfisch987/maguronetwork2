@@ -10,12 +10,12 @@
 			"nursery": {
 				"useExportType": "warn",
 				"useImportType": "warn",
-				"useGroupedTypeImport":"warn",
-				"noUselessTernary":"warn",
-				"noUnusedImports":"warn",
+				"useGroupedTypeImport": "warn",
+				"noUselessTernary": "warn",
+				"noUnusedImports": "warn"
 			},
-			"style":{
-				"useNamingConvention":"warn"
+			"style": {
+				"useNamingConvention": "warn"
 			}
 		}
 	},
