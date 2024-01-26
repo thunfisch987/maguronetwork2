@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import { useWeebsiteImagesStore } from './weebsiteImages';
 
-export type navbarIconType = {
+export type NavbarIconType = {
 	currentSite: string;
 	name: string;
 };
