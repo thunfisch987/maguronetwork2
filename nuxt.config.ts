@@ -36,11 +36,11 @@ export default defineNuxtConfig({
 	},
 	hooks: {
 		'pages:extend'(pages) {
-			pages.forEach((page) => {
+			for (const page of pages) {
 				page.meta = {
 					parentName: page.name?.split('-')[0],
 				};
-			});
+			}
 		},
 	},
 });
