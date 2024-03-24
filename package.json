@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint": "next",
     "@nuxtjs/eslint-config-typescript": "latest",
     "@nuxtjs/html-validator": "latest",
     "@types/bun": "latest",
