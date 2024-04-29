@@ -1,15 +1,12 @@
-import nuxt from './.nuxt/eslint.config.mjs';
+import withNuxt from './.nuxt/eslint.config.mjs';
 
 /**@type {import('@nuxt/eslint-config/flat').FlatConfig[]} */
-export default [
-	...nuxt,
-	{
-		rules: {
-			'vue/html-indent': 'off',
-			'@typescript-eslint/no-unused-vars': [
-				'warn',
-				{ varsIgnorePattern: '^_|_' },
-			],
-		},
+export default withNuxt({
+	rules: {
+		'vue/html-indent': 'off',
+		'@typescript-eslint/no-unused-vars': [
+			'warn',
+			{ varsIgnorePattern: '^_|_' },
+		],
 	},
-];
+});

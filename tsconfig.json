@@ -4,7 +4,5 @@
 	"compilerOptions": {
 		"noImplicitThis": true
 	},
-	"files": [
-		"./utils/router.d.ts"
-	]
+	"files": ["./utils/router.d.ts"]
 }

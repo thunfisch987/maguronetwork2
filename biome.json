@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"organizeImports": {
 		"enabled": true
 	},
@@ -8,20 +8,22 @@
 		"rules": {
 			"recommended": true,
 			"nursery": {
-				"useExportType": "warn",
-				"useImportType": "warn",
-				"useGroupedTypeImport": "warn",
-				"noUselessTernary": "warn",
-				"noUnusedImports": "warn"
+				"noUselessTernary": "warn"
 			},
 			"style": {
+				"useImportType": "warn",
+				"useExportType": "warn",
 				"useNamingConvention": "warn"
+			},
+			"correctness": {
+				"noUnusedImports": "warn"
 			}
 		}
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"ignore": ["package.json"]
 	},
 	"javascript": {
 		"formatter": {
@@ -36,7 +38,25 @@
 	},
 	"vcs": {
 		"enabled": true,
-		"clientKind": "git",
-		"useIgnoreFile": true
-	}
+		"useIgnoreFile": true,
+		"clientKind": "git"
+	},
+	"overrides": [
+		{
+			"include": ["tailwind.config.ts", "components.d.ts"],
+			"linter": {
+				"rules": {
+					"style": {
+						"useNamingConvention": "off"
+					}
+				}
+			}
+		},
+		{
+			"include": ["*.vue"],
+			"linter": {
+				"enabled": false
+			}
+		}
+	]
 }
