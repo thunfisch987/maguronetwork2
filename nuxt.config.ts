@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 	modules: [
 		'@vuestic/nuxt',
 		'@nuxtjs/device',
-		'nuxt-icon',
+		'@nuxt/icon',
 		'nuxt-typed-router',
 		'@nuxtjs/tailwindcss',
 		'@pinia/nuxt',
