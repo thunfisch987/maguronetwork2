@@ -19,7 +19,8 @@
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.1.0",
     "nuxt": "^3.12.4",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "@nuxt/icon": "^1.4.5"
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
