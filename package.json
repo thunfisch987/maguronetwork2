@@ -26,7 +26,7 @@
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/device": "^3.1.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "@pinia/nuxt": "^0.7.0",
+    "@pinia/nuxt": "^0.8.0",
     "@vuestic/nuxt": "^1.0.20",
     "@vuestic/tailwind": "^0.1.5",
     "nuxt-typed-router": "^3.6.5",
