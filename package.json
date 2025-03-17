@@ -12,7 +12,7 @@
     "@nuxt/devtools": "^2.0.0",
     "@nuxt/eslint": "^1.0.0",
     "@nuxt/icon": "^1.10.3",
-    "@nuxtjs/html-validator": "^1.8.2",
+    "@nuxtjs/html-validator": "^2.0.0",
     "@types/bun": "^1.1.14",
     "@types/node": "^22.10.2",
     "@vite-pwa/nuxt": "^0.10.6",
