@@ -6,7 +6,7 @@
         "@nuxt/image": "^1.8.1",
         "@nuxtjs/device": "^3.2.4",
         "@nuxtjs/tailwindcss": "^6.12.2",
-        "@pinia/nuxt": "^0.10.0",
+        "@pinia/nuxt": "^0.11.0",
         "@vuestic/nuxt": "^1.0.21",
         "@vuestic/tailwind": "^0.1.5",
         "nuxt-typed-router": "^3.7.2",
@@ -487,7 +487,7 @@
 
     "@parcel/watcher-win32-x64": ["@parcel/watcher-win32-x64@2.5.0", "", { "os": "win32", "cpu": "x64" }, "sha512-lPrxve92zEHdgeff3aiu4gDOIt4u7sJYha6wbdEZDCDUhtjTsOMiaJzG5lMY4GkWH8p0fMmO2Ppq5G5XXG+DQw=="],
 
-    "@pinia/nuxt": ["@pinia/nuxt@0.10.0", "", { "dependencies": { "@nuxt/kit": "^3.15.4" }, "peerDependencies": { "pinia": "^3.0.0" } }, "sha512-crYQgsqhEnf0HbOuaLYyLR9hyWK2lYUjcCYhFV4vgo3YThrLdnRKfBLa31au1uqcmgDqoX4mEm2OS3DO8GxR7w=="],
+    "@pinia/nuxt": ["@pinia/nuxt@0.11.0", "", { "dependencies": { "@nuxt/kit": "^3.9.0" }, "peerDependencies": { "pinia": "^3.0.2" } }, "sha512-QGFlUAkeVAhPCTXacrtNP4ti24sGEleVzmxcTALY9IkS6U5OUox7vmNL1pkqBeW39oSNq/UC5m40ofDEPHB1fg=="],
 
     "@pkgjs/parseargs": ["@pkgjs/parseargs@0.11.0", "", {}, "sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg=="],
 
