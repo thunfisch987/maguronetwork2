@@ -14,7 +14,7 @@
     "@nuxt/icon": "^1.10.3",
     "@nuxtjs/html-validator": "^2.0.0",
     "@types/bun": "^1.1.14",
-    "@types/node": "^22.10.2",
+    "@types/node": "^24.0.0",
     "@vite-pwa/nuxt": "^1.0.0",
     "eslint": "^9.17.0",
     "nuxt": "^3.14.1592",
