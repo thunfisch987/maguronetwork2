@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^2.0.0",
-    "@nuxtjs/device": "^3.2.4",
+    "@nuxtjs/device": "^4.0.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@pinia/nuxt": "^0.11.0",
     "@vuestic/nuxt": "^1.0.21",
