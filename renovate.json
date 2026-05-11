@@ -1,7 +1,4 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["github>thunfisch987/thunfisch987"],
-	"lockFileMaintenance": {
-		"automerge": false
-	}
+	"extends": ["config:best-practices", ":automergeAll"]
 }
