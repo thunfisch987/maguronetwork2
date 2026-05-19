@@ -1,2 +1,2 @@
 [install]
-saveTextLockfile = true
+minimumReleaseAge = 259200 # 3 days in seconds
