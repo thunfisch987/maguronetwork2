@@ -30,7 +30,7 @@
     "nuxt-typed-router": "^4.0.0",
     "pinia": "^3.0.0",
     "sass": "^1.83.0",
-    "sass-loader": "^16.0.4",
+    "sass-loader": "^17.0.0",
     "sharp": "^0.34.0",
     "vuestic-ui": "^1.10.3"
   }
