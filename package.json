@@ -11,7 +11,7 @@
   "devDependencies": {
     "@nuxt/devtools": "3.4.2",
     "@nuxt/eslint": "1.17.0",
-    "@nuxt/icon": "2.5.0",
+    "@nuxt/icon": "2.5.1",
     "@nuxtjs/html-validator": "2.1.0",
     "@types/bun": "1.4.0",
     "@types/node": "26.2.0",
