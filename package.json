@@ -13,7 +13,7 @@
     "@nuxt/eslint": "1.17.0",
     "@nuxt/icon": "2.5.1",
     "@nuxtjs/html-validator": "2.1.0",
-    "@types/bun": "1.4.1",
+    "@types/bun": "1.4.2",
     "@types/node": "26.5.0",
     "@vite-pwa/nuxt": "1.1.1",
     "eslint": "10.10.0",
