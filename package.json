@@ -18,7 +18,7 @@
     "@vite-pwa/nuxt": "1.1.1",
     "eslint": "10.10.0",
     "nuxt": "4.5.2",
-    "prettier": "3.9.6"
+    "prettier": "3.9.8"
   },
   "dependencies": {
     "@nuxt/image": "^2.0.0",
