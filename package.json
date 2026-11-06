@@ -9,7 +9,7 @@
     "analyze": "nuxt build --analyze"
   },
   "devDependencies": {
-    "@nuxt/devtools": "4.0.0",
+    "@nuxt/devtools": "4.1.0",
     "@nuxt/eslint": "1.17.0",
     "@nuxt/icon": "2.6.1",
     "@nuxtjs/html-validator": "2.1.0",
