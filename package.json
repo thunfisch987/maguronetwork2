@@ -17,7 +17,7 @@
     "@types/node": "26.6.6",
     "@vite-pwa/nuxt": "2.0.4",
     "eslint": "10.15.0",
-    "nuxt": "4.6.4",
+    "nuxt": "4.7.0",
     "prettier": "3.10.1"
   },
   "dependencies": {
