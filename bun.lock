@@ -24,7 +24,7 @@
         "@nuxtjs/html-validator": "2.1.0",
         "@types/bun": "1.4.5",
         "@types/node": "26.6.6",
-        "@vite-pwa/nuxt": "2.0.2",
+        "@vite-pwa/nuxt": "2.0.4",
         "eslint": "10.15.0",
         "nuxt": "4.6.4",
         "prettier": "3.10.1",
@@ -698,11 +698,11 @@
 
     "@unhead/vue": ["@unhead/vue@3.4.3", "", { "dependencies": { "@unhead/bundler": "3.4.3", "hookable": "^6.1.1", "unhead": "3.4.3", "unplugin": "^3.3.0" }, "peerDependencies": { "vite": ">=6.4.2", "vue": ">=3.5.18", "webpack": ">=5.0.0" }, "optionalPeers": ["vite", "webpack"] }, "sha512-Wrmk62oC/V1EcBSKRDuy77kVaBtBXXsj6b+vEEWvmfo9AQfpLlc2b6vvvSj9WnXr8VY1ksKHj49Ejo8J/wLSOA=="],
 
-    "@unplugin-pwa/core": ["@unplugin-pwa/core@0.0.7", "", { "dependencies": { "@vite-pwa/workbox-build": "^8.0.15", "@vite-pwa/workbox-window": "^8.0.15", "hookable": "^6.1.2" }, "peerDependencies": { "@vite-pwa/assets-generator": "^1.0.0 || ^2.0.0", "rolldown": "^1.0.0-0", "vite": "^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0" }, "optionalPeers": ["@vite-pwa/assets-generator", "rolldown", "vite"] }, "sha512-tuuYolkSHpziF8mi7+J+NgVvA5XMMgMSzhaXmSxUPheYnP8U4b19NSwsJX5YsDvbniHGY3ty6E2MFEre1uEHbg=="],
+    "@unplugin-pwa/core": ["@unplugin-pwa/core@0.0.8", "", { "dependencies": { "@vite-pwa/workbox-build": "^8.0.15", "@vite-pwa/workbox-window": "^8.0.15", "hookable": "^6.1.2" }, "peerDependencies": { "@vite-pwa/assets-generator": "^1.0.0 || ^2.0.0", "rolldown": "^1.0.0-0", "vite": "^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0" }, "optionalPeers": ["@vite-pwa/assets-generator", "rolldown", "vite"] }, "sha512-2DTx1YE4VYMZ+Vz7idpFD3tgD7rp5T/Yw6KfwitkF0wkVGhgapPmNx+nysWx7N1tOCztOl11incecCASjqFsPA=="],
 
-    "@unplugin-pwa/inspector": ["@unplugin-pwa/inspector@0.0.7", "", {}, "sha512-DOF0pfjNy7tQHWwk+dwnqPoD76jRGJkt7JKE8WqePYe0VH+tFbS+UqIiG/bd6JEzcHwXAKXlXQW4nMSM5e7Mtw=="],
+    "@unplugin-pwa/inspector": ["@unplugin-pwa/inspector@0.0.8", "", {}, "sha512-jCBGYa0W5j/5ayO/wjfIGBN1HSP9/LNQtwvpGG1D9+ucfCZYWRHs6xWPVp5TpAsO+fwKI4N+fh0npvUylZBUJg=="],
 
-    "@unplugin-pwa/vite": ["@unplugin-pwa/vite@0.0.7", "", { "dependencies": { "@rolldown/pluginutils": "^1.1.0", "@unplugin-pwa/core": "0.0.7", "@unplugin-pwa/inspector": "0.0.7", "@vite-pwa/workbox-build": "^8.0.15", "@vite-pwa/workbox-swkit": "^8.0.15", "@vite-pwa/workbox-window": "^8.0.15" }, "peerDependencies": { "@vite-pwa/assets-generator": "^1.0.0 || ^2.0.0", "magicast": "^0.5.0", "rolldown": "^1.0.0-0", "vite": "^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0" }, "optionalPeers": ["@vite-pwa/assets-generator", "magicast", "rolldown", "vite"] }, "sha512-5CbTqqFEhg80BCuON+i0IuIuozsLvzzSNZIUPvNojyZ/4dtcpwVKipkcKcrpL0tvfuYh9gfjt+XPiBZXYdq81Q=="],
+    "@unplugin-pwa/vite": ["@unplugin-pwa/vite@0.0.8", "", { "dependencies": { "@rolldown/pluginutils": "^1.1.0", "@unplugin-pwa/core": "0.0.8", "@unplugin-pwa/inspector": "0.0.8", "@vite-pwa/workbox-build": "^8.0.15", "@vite-pwa/workbox-swkit": "^8.0.15", "@vite-pwa/workbox-window": "^8.0.15" }, "peerDependencies": { "@vite-pwa/assets-generator": "^1.0.0 || ^2.0.0", "magicast": "^0.5.0", "rolldown": "^1.0.0-0", "vite": "^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0" }, "optionalPeers": ["@vite-pwa/assets-generator", "magicast", "rolldown", "vite"] }, "sha512-k+mSZL/Mk+dUZmPfi5HjdSmYPpuS3Lnj9nIl9UUpV9dlEnTiRJOj9hdbtG6lIZ0pCDKFtp6AaHFVGvbr17iGYA=="],
 
     "@unrs/resolver-binding-android-arm-eabi": ["@unrs/resolver-binding-android-arm-eabi@1.12.2", "", { "os": "android", "cpu": "arm" }, "sha512-g5T90pqg1bo/7mytQx6F4iBNC0Wsh9cu+z9veDbFjc7HjpesJFWD7QMS0NGStXM075+7dJPPVvBbpZlnrdpi/w=="],
 
@@ -750,11 +750,11 @@
 
     "@vercel/nft": ["@vercel/nft@1.11.0", "", { "dependencies": { "@mapbox/node-pre-gyp": "^2.0.0", "@rollup/pluginutils": "^5.1.3", "acorn": "^8.6.0", "acorn-import-attributes": "^1.9.5", "async-sema": "^3.1.1", "bindings": "^1.4.0", "estree-walker": "2.0.2", "glob": "^13.0.0", "graceful-fs": "^4.2.9", "node-gyp-build": "^4.2.2", "picomatch": "^4.0.4", "resolve-from": "^5.0.0" }, "bin": { "nft": "out/cli.js" } }, "sha512-m1QFg+U+3yPOnP1xSYJ73UIRxLOXdts1JOhiOiyPYqEsALgrXFFINvgUaD6R6iNvaBFAjHllBCbkfx4FuOdpaA=="],
 
-    "@vite-pwa/nuxt": ["@vite-pwa/nuxt@2.0.2", "", { "dependencies": { "@nuxt/kit": "^4.6.4", "@unplugin-pwa/core": "^0.0.7", "@vite-pwa/nuxt-core": "2.0.2", "@vite-pwa/nuxt-vite": "2.0.2", "@vite-pwa/workbox-build": "^8.0.15", "defu": "^6.1.7", "verkit": "^0.5.0" }, "peerDependencies": { "@vite-pwa/assets-generator": "^1.0.0 || ^2.0.0", "magicast": "^0.5.0", "rolldown": "^1.0.0-0" }, "optionalPeers": ["@vite-pwa/assets-generator", "magicast", "rolldown"] }, "sha512-OnDGHRONhiIPGCb4uXXcVry1eQBPb9FQvP6junY4qIcLKXiv0n8HELEvdpW02oYT2DIBk5Sk8hjTYubEP1oH2w=="],
+    "@vite-pwa/nuxt": ["@vite-pwa/nuxt@2.0.4", "", { "dependencies": { "@nuxt/kit": "^4.6.4", "@unplugin-pwa/core": "^0.0.8", "@vite-pwa/nuxt-core": "2.0.4", "@vite-pwa/nuxt-vite": "2.0.4", "@vite-pwa/workbox-build": "^8.0.15", "defu": "^6.1.7", "verkit": "^0.5.0" }, "peerDependencies": { "@vite-pwa/assets-generator": "^1.0.0 || ^2.0.0", "magicast": "^0.5.0", "rolldown": "^1.0.0-0" }, "optionalPeers": ["@vite-pwa/assets-generator", "magicast", "rolldown"] }, "sha512-X25uEN5j7yL7FyxlvydDa6m0xyMiZvBxoZvKo4aHJ5LCwcHng5fCSzxO2RC0gwomgsyOBqvboKXUg+2/o7zhBw=="],
 
-    "@vite-pwa/nuxt-core": ["@vite-pwa/nuxt-core@2.0.2", "", { "dependencies": { "@unplugin-pwa/core": "^0.0.7", "@vite-pwa/workbox-build": "^8.0.15" } }, "sha512-yc8p2au3HV0yNSd588fPkdSwF8rxrMToOrhHcbnwfRpx/83dGAm9/m3aUMzK8vhC6YzYeUnWi8VGaplpRiwI9w=="],
+    "@vite-pwa/nuxt-core": ["@vite-pwa/nuxt-core@2.0.4", "", { "dependencies": { "@unplugin-pwa/core": "^0.0.8", "@vite-pwa/workbox-build": "^8.0.15" } }, "sha512-4u4JghHXirF5zOQut7PSeYHFVuLTIY+AYtiAX/CW15DyEcKzy+8wMx4hga4DdC4HGZ1D4NYZbE5kKvnCHtEU2g=="],
 
-    "@vite-pwa/nuxt-vite": ["@vite-pwa/nuxt-vite@2.0.2", "", { "dependencies": { "@nuxt/kit": "^4.6.4", "@rolldown/pluginutils": "^1.1.0", "@unplugin-pwa/core": "^0.0.7", "@unplugin-pwa/vite": "^0.0.7", "@vite-pwa/nuxt-core": "2.0.2", "@vite-pwa/workbox-build": "^8.0.15", "verkit": "^0.5.0" }, "peerDependencies": { "@vite-pwa/assets-generator": "^1.0.0 || ^2.0.0", "magicast": "^0.5.0", "rolldown": "^1.0.0-0" }, "optionalPeers": ["@vite-pwa/assets-generator", "magicast", "rolldown"] }, "sha512-8mZ5B+C3W3YG4enAENH3AvttO60IWewWvnExm0goHp4kDScZl6QObRF2oIw1Z4i8q6R/+KMnu9DHXDyJt9aqaA=="],
+    "@vite-pwa/nuxt-vite": ["@vite-pwa/nuxt-vite@2.0.4", "", { "dependencies": { "@nuxt/kit": "^4.6.4", "@rolldown/pluginutils": "^1.1.0", "@unplugin-pwa/core": "^0.0.8", "@unplugin-pwa/vite": "^0.0.8", "@vite-pwa/nuxt-core": "2.0.4", "@vite-pwa/workbox-build": "^8.0.15", "verkit": "^0.5.0" }, "peerDependencies": { "@vite-pwa/assets-generator": "^1.0.0 || ^2.0.0", "magicast": "^0.5.0", "rolldown": "^1.0.0-0" }, "optionalPeers": ["@vite-pwa/assets-generator", "magicast", "rolldown"] }, "sha512-DAL0vtwDSdkhCyYiu9MQ5AjddTpYVwEhwimyb5bY33/mmr4S4yk+I7+Vpbw7+7tQbdtAv71O1HYmvk1sxuHRsg=="],
 
     "@vite-pwa/workbox-build": ["@vite-pwa/workbox-build@8.0.15", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@vite-pwa/workbox-swkit": "8.0.15", "@vite-pwa/workbox-window": "8.0.15", "magic-string": "^1.4.5", "proper-tags": "^2.0.2", "serialize-javascript": "^7.1.4", "tinyglobby": "^0.2.17", "valibot": "^1.5.0", "verkit": "^0.5.0" }, "peerDependencies": { "@rspack/core": "^1.0.0 || ^2.0.0", "magicast": "^0.5.0", "rolldown": "^1.0.0-0", "vite": "^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0", "webpack": "^5.91.0" }, "optionalPeers": ["@rspack/core", "magicast", "rolldown", "vite", "webpack"] }, "sha512-4CjOeJ8RjHokAAss20ilrjDXlA3mFgKEXY1YEp2jCWJ81ebakZx8fpwY0TUHwe4GCHTHdeobyB8ACseLL6RtDA=="],
 
